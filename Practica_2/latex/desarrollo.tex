@@ -1,8 +1,96 @@
 \section{Solución desarrollo}
 \subsection{Actividad 1}
+
+\noindent\textbf{1. Encontrar la representación mediante el patrón de polos y ceros, así como el término constante del sistema cuya función de transferencia es:}
+	\begin{equation}
+		H(s)=\frac{6s^2+18s+12}{2s^3+10s^2+16s+12}
+	\end{equation}
+	\newline
+	
+	Término constante
+	\begin{equation}
+		H(s)=\frac{6s^2+18s+12}{2s^3+10s^2+16s+12}
+	\end{equation}
+	\begin{equation}
+		\Rightarrow H(s)=\frac{6*\frac{6s^2}{6}+\frac{18s}{6}+\frac{12}{6}}{2*\frac{2s^3}{2}+\frac{10s^2}{2}+\frac{16s}{2}+\frac{12}{2}}
+	\end{equation}
+	\begin{equation}
+		\Rightarrow H(s)=\frac{6*(s^2+3s+2)}{2*(s^3+5s^2+8s+6)}
+	\end{equation}
+	\begin{equation}
+		\Rightarrow H(s)=3*\frac{s^2+3s+2}{s^3+5s^2+8s+6}
+	\end{equation}	
+	\begin{equation}
+		\Rightarrow Termino Constante = 3
+	\end{equation}
+	
+	Raíces
+	\begin{equation}
+		H(s)=\frac{s^2+3s+2}{s^3+5s^2+8s+6}
+	\end{equation}	
+	\begin{equation}
+		\Rightarrow H(s)=\frac{(s+2)(s+1)}{(s+3)(s^2+2s+2)}
+	\end{equation}		
+	\begin{equation}
+		\Rightarrow c_1=-2,c_2=-1,c_3=-3,c_4=1+\iu,c_5=1-\iu
+	\end{equation}		
+	
+	\noindent Debido a que los polos son las raíces del denominador y los ceros las raíces del numerador llegamos a que
+	\begin{equation}
+		Ceros: c_1=-2,c_2=-1 
+	\end{equation}		
+	\begin{equation}
+		Polos: c_3=-3,c_4=1+\iu,c_5=1-\iu
+	\end{equation}
+	\newline
+	
 \subsection{Actividad 2}
 \subsection{Actividad 3}
 \subsection{Actividad 4}
+	
+	\noindent\textbf{4.  Obtenga la función de transferencia del sistema y determine la expresión matemática de la respuesta impulso unitario (considere condiciones iniciales nulas):
+	\begin{equation}
+		S=\frac{1}{ms^2+bs}=\frac{1}{s(ms+b)=\frac{A}{s}+\frac{B}{ms+b}}
+	\end{equation}
+	\begin{equation}
+		\Rightarrow 1=A(ms+b)+Bs
+	\end{equation}
+	Si s = 0
+	\begin{equation}
+		\Rightarrow 1=A(m*0+b)+B*0
+	\end{equation}
+	\begin{equation}
+		\Rightarrow 1=A(b)
+	\end{equation}
+	\begin{equation}
+		\Rightarrow A=\frac{1}{b}
+	\end{equation}
+	Si s=$\frac{-b}{m}$
+	\begin{equation}
+		\Rightarrow 1=A(m*\frac{-b}{m}+b)+B(\frac{-b}{m})
+	\end{equation}
+	\begin{equation}
+		\Rightarrow 1=A(-b+b)+B(\frac{-b}{m})
+	\end{equation}
+	\begin{equation}
+		\Rightarrow 1=A(0)+B(\frac{-b}{m})
+	\end{equation}
+	\begin{equation}
+		\Rightarrow 1=B(\frac{-b}{m})
+	\end{equation}
+	\begin{equation}
+		\Rightarrow B=\frac{m}{-b}
+	\end{equation}
+	Por lo tanto, tras sustituir A y B obtenemos
+	\begin{equation}
+		S=\frac{1}{s(b)}-\frac{-m}{b(ms+b)}=\frac{1}{b}\frac{1}{s}-\frac{m}{mb}\frac{1}{s+\frac{b}{m}}
+	\end{equation}
+	Si aplicamos función de Laplace inversa a este resultado obtenemos
+	\begin{equation}
+		y(t)=\frac{1}{b}u(t)-\frac{1}{b}e^{-\frac{b}{m}*t}
+	\end{equation}
+	\newline
+	
 \subsection{Actividad 5}
 \subsection{Actividad 6}
 \subsection{Actividad 7}
