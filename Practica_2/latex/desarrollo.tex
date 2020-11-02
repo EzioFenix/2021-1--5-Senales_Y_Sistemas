@@ -192,6 +192,30 @@ Comprobación en MATLAB:
 \includegraphics[scale=0.8, angle=0]{mAT.JPG}
 
 \subsection{Actividad 7}
+\noindent\textbf{7.  Considere el circuito mostrado en la Figura 21. Si la entrada de voltaje,$e_in(t)$ es un escalón, encuentre la salida $e_out(t)$. Considere R1= 2 [Ω],R2= 3 [Ω] yC= 1 [F].}
+	\begin{center}
+		\includegraphics{Figura21}
+	\end{center}
+	\noindent Como primer punto encuentre la función de transferencia. Considere que el circuito es un divisor de voltajecon dos impedancias, es decir:
+	\begin{equation}
+		\frac{E_{out}(s)}{E_{in}(s)}=H(s)=\frac{Z_2}{Z_1+Z_2}
+	\end{equation}
+	donde
+	\begin{equation}
+		Z_1=R_1
+	\end{equation}
+	\begin{equation}
+		Z_2=R_2
+	\end{equation}
+	por lo tanto, 
+	\begin{equation}
+		\frac{E_{out}(s)}{E_{in}(s)}=H(s)=\frac{R_2+\frac{1}{sC}}{R_1+R_2+\frac{1}{sC}}
+	\end{equation}
+	Sustituyendo
+		\begin{equation}
+H(s)=\frac{Y(s)}{X(s)}=\frac{2+\frac{1}{s}}{5+\frac{1}{s}}
+	\end{equation}
+	
 \subsection{Actividad 8}
 
 \subsection{Actividad 9}
