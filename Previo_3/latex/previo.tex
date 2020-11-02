@@ -1,11 +1,74 @@
 {\Huge Previo }
-
+\usepackage{mathtools}
 \noindent \justifying
 
 
 \section{¿Qué métodos se pueden utilizar para resolver ecuaciones en diferencias en el dominio del tiempo discreto?} 
 \section{¿Cuál es la relación entre las variables s y z? ¿Cómo se relaciona el plano complejo en s con el plano complejo en z?}
 \section{¿Cómo se caracteriza la estabilidad de los sistemas lineales e invariantes de tiempo discreto?}
+
+	\noindent\textbf{3. ¿Cómo se caracteriza la estabilidad de los sistemas lineales e invariantes de tiempo discreto?}
+	
+	Un sistema discreto es BIBO si para cada entrada de $x[n]$ está acotada, de forma que si existe una $M<\infty$ que cumpla con que $|x[n]|>M$ para tona n, y cada salida de $y[n]$ está igualmente acotada.
+	
+	\begin{equation}
+	|x[n]| \leq M < \infty
+	\end{equation}
+	
+	La anterior ecuación nos indica que va a existir un valor M que va a acotar a todos los valores x[n] de la señal de entrada.
+	
+	En cambio, un sistema de tiempo discreto LTI es BIBO estable si y solo si su secuencia de respuesta de impulso {h [n]} es absolutamente sumable, es decir,
+	\begin{equation}
+		S=\sum_{n=-\infty}^{\infty}|h[n]|<\infty
+	\end{equation}
+	
+	\noindent\textbf{Demostración:}
+
+	Partimos de lo siguiente
+	\begin{equation}
+		|x[n]| \leq M_x < \infty
+	\end{equation}		
+	
+	Empecemos considerando a la salida de la señal como una función convolución
+	\begin{equation}
+		y[n]=x[n]*h[n]=\sum_{m=-\infty}^{\infty}x[m]h[n-m]
+	\end{equation}
+	
+	Si aplicamos valor absoluto a ambos lados de la ecuación y usamos la desigualdad de tres componentes en la suma obtenemos: 
+	\begin{equation}
+		\lvert y[n]\rvert = \lvert \sum_{m=-\infty}^{\infty}x[m]h[n-m] \rvert \leq \sum_{m=-\infty}^{\infty}x[m]h[n-m]
+	\end{equation}		
+	\begin{equation}
+		=\sum_{m=-\infty}^{\infty}\lvert x[m]h[n-m] \rvert \leq \sum_{m=-\infty}^{\infty}M_x \lvert h[n-m] \rvert
+	\end{equation}
+	\begin{equation}
+		\leq M_x \sum_{m=-\infty}^{\infty} \lvert h[n-m] \rvert = M_xS
+	\end{equation}
+
+	Si $S<\infty$ tenemos que 
+	
+	\begin{equation}
+		|y[n]|\leq B_y < \infty
+	\end{equation}
+	
+	Para demostrar la convergencia de S consideramos la entrada x[n] de la siguiente forma
+	
+	\[
+	x[n]=
+	\begin{cases}
+		$sgn(h[-n])$, & \text{si h[-n]  $\neq$ 0} \\
+		K, & \text{si h[-n] = 0}				\end{cases}
+	\]
+	
+	Donde sgn(c)=1 si c>0 y sgn(c)=-1 si c<0 y |K| $\leq$ 0
+	\newline
+	
+	Si usamos la entrada n=0 tenemos:
+	\begin{equation}
+		y[0]=\sum_{k=-\infty}^\infty sng(h[k]) h[k] = S \leq B_y < \infty
+	\end{equation}
+	Con lo que se demuestra que $|y[n]| \leq B_Y$ que implica que $S\leq\infty$
+
 \section{¿Qué diferencias existen entre los métodos de fracciones parciales para sistemas de tiempo continuo y sistemas de tiempo discreto?}
 \section{En qué dispositivo de la vida cotidiana se realizan conversiones de señales de tiempo continuo a tiempo discreto y viceversa?}
 
