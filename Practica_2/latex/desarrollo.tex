@@ -1,7 +1,7 @@
 \section{Solución desarrollo}
 \subsection{Actividad 1}
 
-\noindent\textbf{1. Encontrar la representación mediante el patrón de polos y ceros, así como el término constante del sistema cuya función de transferencia es:}
+\noindent\textbf{Encontrar la representación mediante el patrón de polos y ceros, así como el término constante del sistema cuya función de transferencia es:}
 	\begin{equation}
 		H(s)=\frac{6s^2+18s+12}{2s^3+10s^2+16s+12}
 	\end{equation}
@@ -42,38 +42,58 @@
 	\begin{equation}
 		Polos: c_3=-3,c_4=1+\iu,c_5=1-\iu
 	\end{equation}
-	\newline
+
 	
 \subsection{Actividad 2}
+\textbf{Con ayuda de un equipo de computo y un software especializado, obtenga la representación gráfica de los
+polos y de los ceros de la función de transferencia anteriormente mencionada. ¿Qué puede decir sobre la
+estabilidad del sistema?}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{img/actividad_2}
+	\caption{Gráfica de Polos y Ceros.}
+	\label{fig:actividad2}
+\end{figure}
+
+Es posible apreciar que todos los polos están en el semiplano izquierdo y por ello en esta práctica podemos decir que es un sistema estable. El código para lograr graficarlo se encuentra a continuación.
+\lstset{language=Matlab}
+\begin{lstlisting}
+	num=[6 18 12]
+	den=[2 10 16 12]
+	H =tf([6 8 12],[2 10 16 12]);
+	sgrid
+	pzmap(H)
+	grid on
+\end{lstlisting}
+
 
 \subsection{Actividad 3}
-\noindent\textbf{3. De la Figura 20 obtenga la ecuación diferencial que represente la dinámica del sistema.}	
-\[
+\textbf{ De la Figura 20 obtenga la ecuación diferencial que represente la dinámica del sistema.}	
+$$
 f(t)=x(t){\Longrightarrow}Entrada.
-\]
-\[
+$$
+$$
 x=y(t){\Longrightarrow}Salida.
-\]
-\[
+$$
+$$
 m:masa.
-\]
-\[
-b:fricción.
-\]
-\[
-f(t)-m{\"x}-b{\.x}=0
-\]
-\[
-f(t)=m{\"x}+b{\.x}
-\]
-\[
-\therefore x(t)=m{\"y}+b{\.y}
-\]
+$$
+
+
+$$b:fricci\acute{o}n. $$
+
+$$ f(t)-m \ddot{x}-b \ddot{x}=0 $$
+
+$$f(t)=m\ddot{x}+b\dot{x}$$
+$$\therefore x(t)=m\ddot{y}+b\dot{y}$$
+
 
 
 \subsection{Actividad 4}
 	
-	\noindent\textbf{4.  Obtenga la función de transferencia del sistema y determine la expresión matemática de la respuesta impulso unitario (considere condiciones iniciales nulas):
+	\textbf{Obtenga la función de transferencia del sistema y determine la expresión matemática de la respuesta impulso unitario (considere condiciones iniciales nulas):}
+		
 	\begin{equation}
 		S=\frac{1}{ms^2+bs}=\frac{1}{s(ms+b)=\frac{A}{s}+\frac{B}{ms+b}}
 	\end{equation}
@@ -114,89 +134,125 @@ f(t)=m{\"x}+b{\.x}
 	\begin{equation}
 		y(t)=\frac{1}{b}u(t)-\frac{1}{b}e^{-\frac{b}{m}*t}
 	\end{equation}
-	\newline
+	
 	
 \subsection{Actividad 5}
+\textbf{Bosqueje la respuesta al impulso cuando la magnitud de este es dos, considere $ m = b = 1 $.}
+
+Primero tenemos que obtener la ecuación que vamos a graficar.
+
+\begin{align}
+	H(s) = \frac{1}{ms^2+bs} \\
+	y(s)=\frac{2}{s^2+s} \\
+	\frac{2}{s^2+s}=\frac{A}{s} + \frac{B}{s+1} \\
+	\frac{2}{s \cdot (s+1)} = \frac{A}{s} + \frac{B}{s+1} \\
+	A=2 \hspace{2cm} B=-2 \\
+	y(s)=\frac{2}{s}-2 \cdot \frac{1}{s+1}\\
+	y(t)=2 \cdot u(t) - 2 \cdot e^{-t}
+\end{align}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{img/act_5}
+	\caption{Gráfica impulso con magnitud 2.}
+	\label{fig:act5}
+\end{figure}
+
+El código para lograr la gráfica es el siguiente, vemos que el impulso o pasa de 2.
+
+\begin{lstlisting}
+	t=0:0.001:10000;
+	plot(t,2-2*exp(-t))
+	% Tambien cambia el color y la anchura, eso no se incluye.
+\end{lstlisting}
+
 
 \subsection{Actividad 6}
-\noindent\textbf{6. Considere un sistema cuya función de transferencia es representada como:
-\[
+\noindent\textbf{6. Considere un sistema cuya función de transferencia es representada como:}
+$$
 F(s)=\frac{s+1}{s(s+2)}
-\]
-Utilice el método de fracciones parciales para encontrar la transformada inversa de Laplace y corrobore sus resultados con ayuda de un software especializado.}	
-\[
+$$
+\textbf{Utilice el método de fracciones parciales para encontrar la transformada inversa de Laplace y corrobore sus resultados con ayuda de un software especializado.}
+
+$$
 \frac{s+1}{s(s+2)}=\frac{A}{s}+\frac{B}{s+2}{\Longrightarrow}(1)
-\]
+$$
 Multiplicamos la expresión (1) por s(s+2).
-\[
+$$
 (\frac{s+1}{s(s+2)})*s(s+2)=(\frac{A}{s}+\frac{B}{s+2})*s(s+2)
-\]
-\[
+$$
+$$
 s+1=A*(s+2)+B*(s){\Longrightarrow}(2)
-\]
-Para poder encontar los valores de A y B primeramente vamos a sustituir de la expresión (2) los valores de s por 0, y vamos a resolver.
-\[
+$$
+Para poder encontrar los valores de A y B primeramente vamos a sustituir de la expresión (2) los valores de s por 0, y vamos a resolver.
+$$
 \textbf{s=0:}
-\]
-\[
+$$
+$$
 s+1=A*(s+2)+B*(s)
-\]
-\[
+$$
+$$
 0+1=A*(0+2)+B*(0)
-\]
-\[
+$$
+$$
 1=A*2
-\]
-\[
+$$
+$$
 \frac{1}{2}=A
-\]
-\[
+$$
+$$
 \therefore A=\frac{1}{2}
-\]
+$$
 Para poder encontrar el valor de B, vamos a sustituir el valor de s, igualmente de la expresión (2) por -1, y vamos a resolver.
-\[
+$$
 \textbf{s=-1:}
-\]
-\[
+$$
+$$
 s+1=A*(s+2)+B*(s)
-\]
-\[
+$$
+$$
 -1+1=A*(-1+2)+B*(-1)
-\]
-\[
+$$
+$$
 0=A*(1)-B
-\]
-\[
+$$
+$$
 0=A-B
-\]
-\[
+$$
+$$
 A=B
-\]
-\[
+$$
+$$
 \therefore B=\frac{1}{2}
-\]
+$$
 Sustituimos los valores de A y B en la expresión (1).
-\[
+$$
 \frac{s+1}{s(s+2)}=\frac{\frac{1}{2}}{s}+\frac{\frac{1}{2}}{s+2}
-\]
-\[
+$$
+$$
 F(s)=\frac{1}{2}\frac{1}{s}+\frac{1}{2}\frac{1}{s+2}
-\]
-\[
-\mathcal{L}^{-1}=\mathcal{L}^{-1}
-\]
-\[
+$$
+%$$
+%\mathcal{L}^{-1}=\mathcal{L}^{-1}
+%$$
+$$
 \therefore{y(t)=\frac{1}{2}\mathscr{U}(t)+\frac{1}{2}e^{-2t}}
-\]
-Comprobación en MATLAB:
-\includegraphics[scale=0.8, angle=0]{mAT.JPG}
+$$
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.8]{img/mAT}
+	\caption{Captura de pantalla código.}
+	\label{fig:mat}
+\end{figure}
+
 
 \subsection{Actividad 7}
-\noindent\textbf{7.  Considere el circuito mostrado en la Figura 21. Si la entrada de voltaje,$e_in(t)$ es un escalón, encuentre la salida $e_out(t)$. Considere R1= 2 [Ω],R2= 3 [Ω] yC= 1 [F].}
+\noindent\textbf{Considere el circuito mostrado en la Figura 21. Si la entrada de voltaje,$e_in(t)$ es un escalón, encuentre la salida $e_out(t)$. Considere R1= 2 [Ω],R2= 3 [Ω] y C= 1 [F].}
 	\begin{center}
 		\includegraphics{Figura21}
 	\end{center}
-	\noindent Como primer punto encuentre la función de transferencia. Considere que el circuito es un divisor de voltajecon dos impedancias, es decir:
+	\noindent Como primer punto encuentre la función de transferencia. Considere que el circuito es un divisor de voltaje con dos impedancias, es decir:
 	\begin{equation}
 		\frac{E_{out}(s)}{E_{in}(s)}=H(s)=\frac{Z_2}{Z_1+Z_2}
 	\end{equation}
@@ -217,6 +273,8 @@ H(s)=\frac{Y(s)}{X(s)}=\frac{2+\frac{1}{s}}{5+\frac{1}{s}}
 	\end{equation}
 	
 \subsection{Actividad 8}
+\textbf{Encuentre la expresión matemática que determina la respuesta a una entrada escalón y bosqueje sus resultados con ayuda de un software especializado.}
+
 Entrada = u(t), $L{u(t)}=\frac{1}{s}$, $x(s)=\frac{1}{s}$
 
 \begin{equation}
@@ -235,9 +293,11 @@ Sustituyendo los valores de las resistencias obtenemos:
 	Y(s)=\frac{1}{s}\frac{3+\frac{1}{sC}}{5+\frac{1}{sC}}
 \end{equation}
 Simplificando el sistema llegamos a
+
 \begin{equation}
-	Y(s)=\frac{1}{s}\frac{3s+1}}{5s+1}=\frac{3s+1}{s(5s+1)}
+	Y(s)=\frac{1}{s}\frac{3s+1}{5s+1}=\frac{3s+1}{s(5s+1)}
 \end{equation}
+
 Si lo pasamos a notación de ecuaciones parciales llegamos a:
 \begin{equation}
 	\frac{3s+1}{s(5s+1)}=\frac{A}{s}+\frac{B}{5s+1}
@@ -267,46 +327,46 @@ Por último, si aplicamos transformada de Laplace inversa llegamos a que la señ
 	\end{center}
 
 \subsection{Actividad 9}
-\noindent\textbf{9. De una forma alternativa, considerando el teorema del valor final y el teorema del valor inicial (sin la transformada inversa de Laplace) determine la respuesta al escalón. ¿Qué puede decir con respecto a lo realizado en la actividad 8?.}
-\[
+\textbf{9. De una forma alternativa, considerando el teorema del valor final y el teorema del valor inicial (sin la transformada inversa de Laplace) determine la respuesta al escalón. ¿Qué puede decir con respecto a lo realizado en la actividad 8?.}
+$$
 y(s)=\frac{3s+1}{s(5s+1)}
-\]
-\[
+$$
+$$
 \lim_{s \to \infty}y(s)=\lim_{s \to \infty}\frac{3s+1}{s(5s+1)}
-\]
-\[
+$$
+$$
 \lim_{s \to 0}y(s)=\lim_{s \to 0}\frac{3s+1}{s(5s+1)}
-\]
+$$
 Para poder utilizar el teorema del valor inicial y del valor final, debemos hacer que nuestra expresión tenga la siguiente estructura:
-\[
+$$
 H(s)=\frac{1}{s}\frac{bs+c}{(s+a)}
-\]
+$$
 Para ello vamos a dividir tanto el numerador como denominador entre 5, y vamos a reacomodar.
-\[
+$$
 =\frac{\frac{1}{5}}{\frac{1}{5}}\frac{3s+1}{s(5s+1)}
-\]
-\[
+$$
+$$
 =\frac{\frac{3s+1}{5}}{s{\frac{5s+1}{5}}}
-\]
-\[
+$$
+$$
 =\frac{1}{s}\frac{\frac{3}{5}s+\frac{1}{5}}{s+\frac{1}{5}}
-\]
-\[
+$$
+$$
 a=\frac{1}{5};b=\frac{3}{5};c=\frac{1}{5}
-\]
+$$
 Una vez que tenemos nuestra  expresión con la estructura de H(s), vamos a ver que por definición tenemos lo siguiente:
-\[
+$$
 H(\infty)=b
-\]
-\[
+$$
+$$
 H(0)=\frac{c}{a}
-\]
+$$
 Por lo tanto:
-\[
+$$
 \lim_{s \to \infty}y(s)=H(\infty)=b=\frac{3}{5}=0.6
-\]
-\[
+$$
+$$
 \lim_{s \to 0}y(s)=H(0)=\frac{c}{a}=\frac{\frac{1}{5}}{\frac{1}{5}}=
 \frac{5*1}{5*1}=1
-\]
-A través del teorema del valor inicial y el valor final, podemos llegar a los mismos valores (inicial y final), y esto se puede comprobar con la grafica obtenida en el inciso 8), ya que muestra los mismos valores.
+$$
+A través del teorema del valor inicial y el valor final, podemos llegar a los mismos valores (inicial y final), y esto se puede comprobar con la gráfica obtenida en el inciso 8), ya que muestra los mismos valores.
