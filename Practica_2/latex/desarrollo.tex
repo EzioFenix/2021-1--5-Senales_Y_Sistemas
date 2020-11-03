@@ -217,6 +217,50 @@ H(s)=\frac{Y(s)}{X(s)}=\frac{2+\frac{1}{s}}{5+\frac{1}{s}}
 	\end{equation}
 	
 \subsection{Actividad 8}
+Entrada = u(t), $L{u(t)}=\frac{1}{s}$, $x(s)=\frac{1}{s}$
+
+\begin{equation}
+	H(s)=\frac{Y(s)}{X(s)}=\frac{R_2+\frac{1}{sC}}{R_1+R_2+\frac{1}{sC}}
+\end{equation}
+Sustituyendo a x(s) en la ecuación anterior obtenemos:
+\begin{equation}
+	H(s)=\frac{Y(s)}{\frac{1}{s}}=\frac{R_2+\frac{1}{sC}}{R_1+R_2+\frac{1}{sC}}
+\end{equation}
+Despejando a Y(s) llegamos a:
+\begin{equation}
+	Y(s)=\frac{1}{s}\frac{R_2+\frac{1}{sC}}{R_1+R_2+\frac{1}{sC}}
+\end{equation}
+Sustituyendo los valores de las resistencias obtenemos:
+\begin{equation}
+	Y(s)=\frac{1}{s}\frac{3+\frac{1}{sC}}{5+\frac{1}{sC}}
+\end{equation}
+Simplificando el sistema llegamos a
+\begin{equation}
+	Y(s)=\frac{1}{s}\frac{3s+1}}{5s+1}=\frac{3s+1}{s(5s+1)}
+\end{equation}
+Si lo pasamos a notación de ecuaciones parciales llegamos a:
+\begin{equation}
+	\frac{3s+1}{s(5s+1)}=\frac{A}{s}+\frac{B}{5s+1}
+\end{equation}
+\begin{equation}
+	{3s+1}=A(5s+1)+B(s)
+\end{equation}
+Si s = 0 obtenemos
+\begin{equation}
+	{0s+1}=A(0s+1)+B(0) \Rightarrow A=1
+\end{equation}
+Si $s = -\frac{1}{5}$ obtenemos
+\begin{equation}
+	{\frac{-1}{5}s+1}=A(\frac{-1}{5}s+1)+B(\frac{-1}{5}) \Rightarrow B=-2
+\end{equation}
+Por lo tanto llegamos a la siguiente expresión
+\begin{equation}
+	y(s)=\frac{1}{s}-\frac{2}{5s+1}
+\end{equation}
+Por último, si aplicamos transformada de Laplace inversa llegamos a que la señal de salida es:
+\begin{equation}
+	y(t)=u(t)-\frac{2}{5}e^{-\frac{1}{5}t}
+\end{equation}
 
 \subsection{Actividad 9}
 \noindent\textbf{9. De una forma alternativa, considerando el teorema del valor final y el teorema del valor inicial (sin la transformada inversa de Laplace) determine la respuesta al escalón. ¿Qué puede decir con respecto a lo realizado en la actividad 8?.}
