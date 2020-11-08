@@ -1,0 +1,89 @@
+\textbf{Solución analítica del circuito:}
+
+\textbf{Representación grafica: }
+
+
+\begin{itemize}
+	\item Considerando un periodo de muestreo de $ T_s = 1 $ y utilizando el método de discretización mediante
+	diferencias finitas, encuentre la ecuación en diferencias asociada y resu´elvala utilizando el método de recurrencia. Compare los resultados gr´aficos de la versi´on de tiempo continuo y la de tiempo discreto para diferentes valores del periodo de muestreo (disminúyalo en un punto decimal hasta $T_s = 0,0001$).
+\end{itemize}
+
+\textbf{Comparación entre solución de tiempo discreto y aproximación con diferencias finitas para diferentes valores del tiempo de muestreo}
+
+\begin{itemize}
+	\item Obtenga la función de transferencia del sistema de tiempo continuo.
+	\item Utilizando $ T_s = 1 $:
+\end{itemize}
+
+\textbf{A)} Obtenga la función de transferencia de tiempo discreto de la ecuación en diferencias que resultó en	el punto anterior.
+
+\textbf{B)}  Obtenga la función de transferencia de tiempo discreto a partir de la función de transferencia de tiempo continuo del sistema utilizando un diferenciador discreto, ¿cómo son las funciones de transferencia obtenidas en este punto y el anterior? ¿qué puede concluir?
+
+
+\begin{itemize}
+	\item Grafique en una sola figura la respuesta al impulso del sistema de tiempo continuo, y las dos aproximaciones
+	de tiempo discreto.
+\end{itemize}
+
+\textbf{Comparación de solución de tiempo contunuo y solución de tiempo discreto utilizando funciones de tranferencia}
+
+\begin{itemize}
+	\item Disminuya el tiempo de muestreo hasta obtener una aproximación adecuada de la respuesta del sistema
+	y grafique la comparación. ¿Qu´e aproximación resultó mejor?
+\end{itemize}
+
+\textbf{Comparacion de solución de tiempo continuo y solución de tiempo discreto utilizando funciones de tranferencia para diferentes valores de tiempo de muestreo }
+
+{\Large Control discreto de un sistema de tiempo continuo.}
+
+Considere un sistema lineal e invariante en el tiempo representado por la siguiente funci´on de transferencia
+
+\begin{equation*}
+	G(s)=\frac{1}{s(s+3)}
+\end{equation*}
+
+\begin{itemize}
+	\item Determine la estabilidad del sistema.
+	\item Utilizando el software especializado de su preferencia, determine la respuesta al escalón del sistema y describa como es su comportamiento.
+\end{itemize}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.7]{img2/fig24}
+	\label{fig:fig24}
+\end{figure}
+
+\textbf{Respuesta al escalón del sistema a controlar}
+
+\begin{itemize}
+	\item Cuando se desea cambiar el comportamiento de un sistema se debe implementar un controlador de lazo
+	cerrado, el cual compara la se˜nal de salida del sistema con la se˜nal de referencia y con base en esta se˜nal
+	de error calcula la entrada del sistema para que se obtenga el comportamiento deseado, de acuerdo con
+	el diagrama de bloques mostrado en Figura 24. El modo m´as simple de control consiste en el control
+	proporcional, el cual realimenta un término proporcional del error de salida, es decir,
+\end{itemize}
+
+\begin{equation*}
+	u_c=K(r-y)
+\end{equation*}
+
+La conexión de la Figura 24 se denomina conexión en retroalimentación negativa, y es posible determinar la función de transferencia correspondiente mediante software especializado, para lo cual se deben definir
+previamente las funciones de transferencia del controlador, del sistema y del sensor. Considerando la función de transferencia del sistema, la del controlador como C(s) = K y la del sensor H(s) = 1, determine
+la función de transferencia de lazo cerrado Gc(s) correspondiente. ¿Cómo son los polos del sistema? ¿Qué puede decir de la estabilidad del mismo?
+
+\begin{itemize}
+	\item A partir de las funciones de transferencia de lazo abierto y de lazo cerrado en tiempo continuo obtenga las versiones de tiempo discreto. Realice lo anterior utilizando los procedimientos presentados en la
+	Introducción Teórica y el software especializado de su elección. Reporte sus resultados a continuación.
+\end{itemize}
+
+\textbf{Respuesta al escalón del sistema con control}
+
+\begin{itemize}
+	\item Determine los polos de lazo abierto y de lazo cerrado de tiempo discreto y caracterice la estabilidad de
+	cada uno de estos. Determine la respuesta al escalón de ambos sistemas utilizando software especializado.
+	Escriba sus resultados a continuación y las gráficas obtenidas en los espacios correspondientes.
+\end{itemize}
+
+\textbf{Respuesta al escalón del sistema en tiempo discreto}
+
+\textbf{Respuesta al escalón del sistema de control en tiempo discreto}

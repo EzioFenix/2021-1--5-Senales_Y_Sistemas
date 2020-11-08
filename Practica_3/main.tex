@@ -1,0 +1,46 @@
+\documentclass[10pt]{article}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{tabularx} % para width table
+\usepackage[left=1.5cm,top=2.4cm,right=2.1cm,bottom=3cm,bindingoffset=0.5cm]{geometry} % original[22 iz,24 arri]
+\usepackage{multirow}
+\graphicspath{{img/}{img2/}}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{hyperref} % Hipervinculos
+\usepackage{ragged2e} % Alineación
+\usepackage{amssymb} %therefore
+\usepackage{float} %Here
+\usepackage{listings}
+\usepackage{mathrsfs,mathtools} 
+\usepackage{pdfpages} %Incluir pdf
+
+%% paquetes para esta práctica (aquí abajo)-------------------------------
+
+
+
+
+
+%% Preambulo configuraciones adicionales----------------------------------
+
+\newcommand{\iu}{{i\mkern1mu}} % definicon nuevo comando
+\addtolength{\jot}{1em} % espacio vertical ecuaciones
+
+
+%% Cuerpo principal-------------------------------------------------------
+
+\begin{document}
+	\include{latex/Portada}
+	\includepdf[pages=-]{latex/parte1.pdf}
+	\include{latex/previo.tex}
+	\includepdf[pages=-]{latex/parte2.pdf}
+	\include{latex/desarrollo.tex}
+%	\includepdf[pages=-]{latex/parte3.pdf}
+	\input{latex/preguntasCierre.tex}
+	\include{latex/conclu.tex}
+	%\nocite{webNijtEdu}
+	\nocite{*}
+	\bibliographystyle{plain}
+	\bibliography{latex/previo3.bib}
+\end{document}
+
