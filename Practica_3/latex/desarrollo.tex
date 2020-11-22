@@ -36,7 +36,7 @@
 
 {\Large Control discreto de un sistema de tiempo continuo.}
 
-Considere un sistema lineal e invariante en el tiempo representado por la siguiente funci´on de transferencia
+Considere un sistema lineal e invariante en el tiempo representado por la siguiente función de transferencia
 
 \begin{equation*}
 	G(s)=\frac{1}{s(s+3)}
@@ -44,7 +44,16 @@ Considere un sistema lineal e invariante en el tiempo representado por la siguie
 
 \begin{itemize}
 	\item Determine la estabilidad del sistema.
+Para poder determinar la estabilidad del sistema, vamos a ver con MATLAB en donde se encuentran sus Polos. Para ello vamos a escribir los siguientes comandos.\\
+\includegraphics[scale=1]{cod1.png}\\
+\includegraphics[scale=1]{G1.png}\\ \\
+Como se puede ver un polo esta en s=-3, pero el otro polo esta en s=0, por lo que no podemos decir si el sistema es estable o no. Ya que para que un sistema sea estable TODOS sus polos deben de estar en la parte izquierda del plano S. Por lo que primero veremos su respuesta al escalón para así poder determinar si el sistema es estable o no.
+
 	\item Utilizando el software especializado de su preferencia, determine la respuesta al escalón del sistema y describa como es su comportamiento.
+Para determinar la respuesta al escalón del sistema vamos a agregar el siguiente comando al código anterior: step(H,'-')\\
+\includegraphics[scale=1]{G2.png} \\ \\
+Al analizar esta gráfica podemos ver que no tiene fin, en otras palabras la gráfica no tiene limite, ya que solamente es creciente conforme va avanzando en el eje X positivo. Por lo que podemos concluir a la pregunta anterior que NO es estable el sistema.
+
 \end{itemize}
 
 \begin{figure}[H]
@@ -70,6 +79,33 @@ Considere un sistema lineal e invariante en el tiempo representado por la siguie
 La conexión de la Figura 24 se denomina conexión en retroalimentación negativa, y es posible determinar la función de transferencia correspondiente mediante software especializado, para lo cual se deben definir
 previamente las funciones de transferencia del controlador, del sistema y del sensor. Considerando la función de transferencia del sistema, la del controlador como C(s) = K y la del sensor H(s) = 1, determine
 la función de transferencia de lazo cerrado Gc(s) correspondiente. ¿Cómo son los polos del sistema? ¿Qué puede decir de la estabilidad del mismo?
+
+$$Y(s)=\frac{1}{s(s+3)}KE(s)$$
+$$Y(s)=\frac{KE(s)}{s(s+3)}$$
+$$E(s)=\frac{Y(s)(s(s+3))}{k}$$
+Si $E(s)=R(s)-Y(s)$
+$$R(s)-Y(s)=\frac{Y(s)(s(s+3))}{k}$$
+$$KR(s)-KY(s)=Y(s)(s(s+3))$$
+$$KR(s)=Y(s)(s(s+3)+K)$$
+$$G_{c}(s)=\frac{Y(s)}{R(s)}=\frac{K}{s(s+3)+K}$$
+Función de transferencia de lazo cerrado:
+$$G_{c}(s)=\frac{Y(s)}{R(s)}=\frac{K}{(s(s+3)+K)}$$	
+Si k=1:
+$$G(s)=\frac{1}{(s(s+3)+1)}$$	
+$$G(s)=\frac{1}{s^{2}+3s+1}$$	
+\includegraphics[scale=0.5]{../Downloads/DESCARGAS/G3.jpg}\\ 
+Polos: $P_{1}=-2.618$ y $P_{2}=-0.382$\\\\
+Respuesta al escalón del sistema:\\
+\includegraphics[scale=0.4]{../Downloads/DESCARGAS/G5.jpg}\\
+Si k=-10:
+$$G(s)=\frac{-10}{(s(s+3)-10)}$$	
+$$G(s)=\frac{-10}{s^{2}+3s-10}$$
+\includegraphics[scale=0.36]{../Downloads/DESCARGAS/G4.jpg}\\ 	
+Polos: $P_{1}=-5$ y $P_{2}=2$\\\\
+Respuesta al escalón del sistema:\\
+\includegraphics[scale=0.36]{../Downloads/DESCARGAS/G6.jpg}\\
+¿Cómo son los polos del sistema? Dependiendo del valor de K los polos del sistema van a variar.\\
+¿Qué puede decir de la estabilidad del mismo? Lo que podemos ver con estos dos valores de K, es que dependiendo de su valor se modificará la entrada del sistema, volviéndose estable o inestable.
 
 \begin{itemize}
 	\item A partir de las funciones de transferencia de lazo abierto y de lazo cerrado en tiempo continuo obtenga las versiones de tiempo discreto. Realice lo anterior utilizando los procedimientos presentados en la
