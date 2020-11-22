@@ -4,38 +4,214 @@ Considere un circuito RLC como el mostrado en la Figura 23, cuyo comportamiento,
 	\frac{d^2V_c(t)}{dt^2}+\frac{R}[L}+\frac{1}{LC}V_g(t)=\frac{1}{LC}V_g(t)
 \end{equation}
 
-\textbf{Solución analítica del circuito:}
+\noindent considere que $\frac{R}{L}=1$ y $\frac{1}{LC}=5$
 
-\textbf{Representación grafica: }
+\begin{itemize}
+\item Resuelva la ecuación diferencial utilizando los métodos analíticos disponibles en el software especializado que esté utilizando, escriba la solución y grafíquela, muestre los resultados en el siguiente cuadro
+\end{itemize}
 
+\noindent \textbf{Solución analítica del circuito:}
+
+Empezamos por la sustitución de los valores dados en el ejercicio, donde $\frac{R}{L}=1$ y $\frac{1}{LC}=5$. Con esto podemos reescribir nuestra ecuación de la siguiente forma:
+
+\begin{equation}
+	\frac{d^2V_c(t)}{dt^2}+\frac{dV_c(t)}{dt}+5V_g(t)=5V_g(t)
+\end{equation}
+
+\noindent Realizamos la sustitución de $V_c(t)=y(t)$ y $V_g(t)=x(t)$
+
+\begin{equation}
+	\frac{d^2y(t)}{dt^2}+\frac{dy(t)}{dt}+5y(t)=5x(t)
+\end{equation}
+
+\noindent Con dichos cambios ya podemos empezar a aplicar la transformada de Laplace a ambos lados de la ecuación
+
+\begin{equation}
+	\Laplace\{{\frac{d^2y(t)}{dt^2}+\frac{dy(t)}{dt}+5y(t)}\}=\Laplace\{{5x(t)}\}
+\end{equation}
+
+\begin{equation}
+	s^2Y(s)+sY(s)+5Y(s)=5X(s)
+\end{equation}
+
+\noindent Factorizamos $Y(s)$ y $X(s)$
+
+\begin{equation}
+	Y(s)(s^2+s+5)=5X(s)
+\end{equation}
+
+\noindent Si reacomodamos la expresión finalmente llegamos a la función de transferencia
+
+\begin{equation}
+	H(s)=\frac{Y(s)}{X(s)}=\frac{5}{(s^2+s+5)}
+\end{equation}
+
+\noindent Si consideramos la entrada un escalor, es decir que $X(s)=1$ simplificamos la expresión a 
+
+\begin{equation}
+	Y(s)=\frac{5}{(s^2+s+5)}
+\end{equation}
+
+\noindent Una vez teniendo la transformada de Laplace podemos aplicar la antitransformada para llegar a la ecuación solución del sistema.
+
+\begin{equation}
+	\Laplace^-1\{Y(s)\}=\Laplace^-1\{\frac{5}{(s^2+s+5)}\}
+\end{equation}
+
+\begin{equation}
+	y(t)=\frac{10\sqrt(19)e^\frac{-t}{2}sin(\frac{\sqrt(19)t)}{2})}{19}
+\end{equation}
+
+\noindent\textbf{Representación grafica: }
+
+\noindent \includegraphics[scale=0.6]{./ImagenParte1y2/salidaejercicio1}
 
 \begin{itemize}
 	\item Considerando un periodo de muestreo de $ T_s = 1 $ y utilizando el método de discretización mediante
 	diferencias finitas, encuentre la ecuación en diferencias asociada y resu´elvala utilizando el método de recurrencia. Compare los resultados gr´aficos de la versi´on de tiempo continuo y la de tiempo discreto para diferentes valores del periodo de muestreo (disminúyalo en un punto decimal hasta $T_s = 0,0001$).
 \end{itemize}
 
-\textbf{Comparación entre solución de tiempo discreto y aproximación con diferencias finitas para diferentes valores del tiempo de muestreo}
+Empezaremos por encontrar la ecuación en diferencias.Para esto tendremos que utilizar la definición que nos permite transformar de una ecuación diferencial a una en diferencias:
+
+\begin{equation}
+\frac{dy}{dx}=\frac{y(t)-y(t-T_s)}{T_s}
+\end{equation}
+
+\noindent e igualmente usaremos la que nos permite pasar de una diferencial de segundo grado a su equivalente en diferencias:
+
+\begin{equation}
+\frac{d^2y}{dt^2)}=\frac{y(t)-2y(t-T_s)+y(t-2T_s}{T_s^2}
+\end{equation}
+
+\noindent Tras sustituir ambas definiciones llegamos a:
+
+\begin{equation}
+\frac{V_c(t)-2V_c(t-T_s)+V_c(t-2T_s)}{T_s^2}+\frac{R}{L}\frac{V_c(t)-V_c(t-T_s)}{T_s}+\frac{1}{LC}V_c(t)=\frac{1}{LC}V_g(t)
+\end{equation}
+
+\noindent Aplicamos las equivalencias que nos dieron al inicio de la práctica $\frac{R}{L}=5$, $\frac{1}{LC}=5$, $V_c(t)=y(t)$ y $V_g(t)=x(t)$
+
+\begin{equation}
+\frac{y(t)-2y(t-T_s)+y(t-2T_s)}{T_s^2}+\frac{y(t)-y(t-T_s)}{T_s}+5y(t)=5x(t)
+\end{equation}
+
+\noindent \textbf{Salida con $T_s=1$}
+
+\noindent \includegraphics[scale=0.6]{./ImagenParte1y2/SalidaTs1}
+
+\noindent \textbf{Salida con $T_s=0,0001$}
+
+\noindent \includegraphics[scale=0.6]{./ImagenParte1y2/SalidaTs00001}
+
+Para la obtención de las gráficas anteriores se usaron los siguientes comandos de Matlab:
+
+\begin{itemize}
+\item Ts=1
+\item Hs=tf([5],[1 1 5])
+\item Hz=c2d(Hs,Ts,'foh')
+\item step(Hs,'-',Hz,'-')
+\end{itemize}
+
+
+Como podemos concluir de observar ambas gráficas, la importancia de $T_s$ radica en que mientras más se acerque su valor a cero mejor será la aproximación de la solución de ecuaciones por diferencias a la solución de la ecuación en tiempo contínuo. Esto mismo lo podemos ver al hacer $T_s=0.0001$ parece que las gráficas se sobreponen, mientras que en $T_s=1$ se ve claramente la diferencia entre ambas gráficas. Cabe aclarar que la gráfica obtenida mediante la solución de diferencias finitas nunca va a ser la misma que la de tiempo continuo sin importar cuanto se disminuya $T_s$
 
 \begin{itemize}
 	\item Obtenga la función de transferencia del sistema de tiempo continuo.
 	\item Utilizando $ T_s = 1 $:
 \end{itemize}
 
+\begin{equation}
+	H(s)=\frac{Y(s)}{X(s)}=\frac{5}{(s^2+s+5)}
+\end{equation}
+
+
 \textbf{A)} Obtenga la función de transferencia de tiempo discreto de la ecuación en diferencias que resultó en	el punto anterior.
+
+A partir de la ecuación obtenida en el ejercicio anterior
+
+\begin{equation}
+\frac{y(t)-2y(t-T_s)+y(t-2T_s)}{T_s^2}+\frac{y(t)-y(t-T_s)}{T_s}+5y(t)=5x(t)
+\end{equation}
+
+Podemos llegar a que si $T_s=1$ nuestra ecuación por diferencias es la siguiente:
+
+
+
+\begin{equation}
+\frac{0.5252z^2+1.231z+0.3053}{z^2 +0.6936x + 0.3679}
+\end{equation}
+
+Dicha ecaución es obtenida en Matlab tras usar los siguientes comandos.
+
+\begin{itemize}
+\item Ts=1
+\item Hs=tf([5],[1 1 5])
+\item Hz=c2d(Hs,Ts,'foh')
+\end{itemize}
 
 \textbf{B)}  Obtenga la función de transferencia de tiempo discreto a partir de la función de transferencia de tiempo continuo del sistema utilizando un diferenciador discreto, ¿cómo son las funciones de transferencia obtenidas en este punto y el anterior? ¿qué puede concluir?
 
+Como ya habíamos mencionado antes, la función de transferencia en tiempo discreto utilizando un diferenciador discreto es la siguiente:
+
+\begin{equation}
+\frac{0.5252z^2+1.231z+0.3053}{z^2 +0.6936x + 0.3679}
+\end{equation}
+
+La comparación entre la obtención de la función de transferencia con y sin diferenciador se ve en las gráficas de la siguiente pregunta. Lo que se puede observar es que mediante el uso del diferenciador, la ecuación y su gráfica se acercan más a la ecuación y gráfica de la respuesta en tiempo contínuo, es decir, la presencia del diferenciador hace más exacta la aproximación en tiempo discreto.
 
 \begin{itemize}
 	\item Grafique en una sola figura la respuesta al impulso del sistema de tiempo continuo, y las dos aproximaciones
 	de tiempo discreto.
 \end{itemize}
 
-\textbf{Comparación de solución de tiempo contunuo y solución de tiempo discreto utilizando funciones de tranferencia}
+Para esto se generaron dos gráficas: una sin diferenciador discreto y una con diferenciador discreto, siendo representadas por las curvas roja y amarilla respectivamente. Cabe mencionar que las curvas son la respueta al impulso.
+
+\noindent \textbf{Salida con $T_s=1$}
+
+\noindent \includegraphics[scale=0.6]{./ImagenParte1y2/SalidaTs1DosHz}
+
+La obtención de la gráfica anterior se realizó con la siguiente serie de comandos
+
+\begin{itemize}
+\item Ts=1
+\item Hs=tf([5],[1 1 5])
+\item Hz=c2d(Hs,Ts)
+\item Hz2=c2d(Hs,Ts,'foh')
+\item impulse(Hs)
+\item hold on
+\item dimpulse(Hz,Ts)
+\item hold on
+\item dimpulse(Hz2,Ts)
+\end{itemize}
 
 \begin{itemize}
 	\item Disminuya el tiempo de muestreo hasta obtener una aproximación adecuada de la respuesta del sistema
 	y grafique la comparación. ¿Qu´e aproximación resultó mejor?
+\end{itemize}
+
+Para obtener una aproximación adecuada se disminuyó el valor de $T_s$ a 0.0001, generando la siguiente 
+\newline
+
+\noindent \textbf{Salida con $T_s=0.0001$}
+
+\noindent \includegraphics[scale=0.6]{SalidaTs00001DosHz}
+
+Debido a la gran aproximación de ambas gráficas se requiere de un acercamiento para poder observar las diferencias entre la gráfica generada con diferenciador (amarilla) y la generada sin diferenciador (roja).
+
+\noindent \includegraphics[scale=0.6]{SalidaTs00001DosHzAcercamiento}
+
+Gracias a este acercamiento podemos apreciar que la gráfica que se acerca más a la de tiempo continuo (azul) es la que utiliza un diferenciador (amarilla). Para esto utilizamos los comandos:
+
+\begin{itemize}
+\item Ts=0.0001
+\item Hs=tf([5],[1 1 5])
+\item Hz=c2d(Hs,Ts)
+\item Hz2=c2d(Hs,Ts,'foh')
+\item impulse(Hs)
+\item hold on
+\item dimpulse(Hz,Ts)
+\item hold on
+\item dimpulse(Hz2,Ts)
 \end{itemize}
 
 \textbf{Comparacion de solución de tiempo continuo y solución de tiempo discreto utilizando funciones de tranferencia para diferentes valores de tiempo de muestreo }
