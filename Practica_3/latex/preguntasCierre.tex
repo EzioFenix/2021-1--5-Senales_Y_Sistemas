@@ -5,3 +5,49 @@
 \subsection{¿Qué relación existe entre la transformadas de Laplace y Z?}
 
 \subsection{¿Cómo se caracteriza la estabilidad de sistemas de tiempo continuo y tiempo discreto en el contexto de funciones de transferencia?}
+
+En sistemas continuos la estabilidad se analiza en el denominador de la función de transferencia. La estabilidad va a depender de la posición de las raíces obtenidas al utiliar el método de fracciones parciales. En el caso de raices positivas observamos lo siguiente:
+
+\begin{equation}
+H(s)=\frac{C_1}{s+p_1}+\frac{C_2}{s+p_2}+...+\frac{C_N}{s+p_N}
+\end{equation}
+
+A dicha transformada de Laplace le corresponde la siguiente antitransformada:
+
+\begin{equation}
+h(t)=C_1e^{-p_1t}+C_2e^{-p_2t}+...+C_Ne^{-p_Nt}
+\end{equation}
+
+Cada termino de la siguiente ecuación puede caer en uno de los siguientes tres casos:
+
+\begin{itemize}
+\item La raíz $s=-p_n$ es positiva, entonces el exponente es positivo y la exponencial tenderá al infinito con el tiempo.
+\item La raíz $s=-p_n$ es negativa, por lo que el exponente correspondiente es negativo y al exponencial tenderá a cero con el tiempo.
+\item La raíz $s=-p_n$ es cero con lo cual la exponencial evaluada será uno obteniendo un valor constante $C_n$
+\end{itemize}
+
+De la misma forma se puede analizar los casos en que las raices de la transformada de Laplace sean complejas. En dichos casos la función de transferencia tendra una forma similar a la siguiente:
+
+\begin{equation}
+H(s)=\frac{C_1}{s+p_1}+\frac{C_2^2+C_3}{s^2+\alpha s+\beta}+...+\frac{C_N}{s+p_N}
+\end{equation}
+
+En este caso el termino complejo es la segunda fracción de la ecuación. Si analizamos la antitransformada de laplace de dicho término podemos ver que puede tener una de las siguientes dos formas:
+
+\begin{equation}
+\frac{\omega}{(s+a)^2+{\omega}^2} => e^{-\alpha t}seno(\omega t)
+\end{equation}
+
+\begin{equation}
+\frac{s+a}{(s+a)^2+{\omega}^2} => e^{-\alpha t}cos(\omega t)
+\end{equation}
+
+Debido a que las funciones seno y coseno oscilan entre los valores de 1 y -1 el comportamiento del término imaginario va a depender de $e^-{\alpha t}$. Con esto podemos llegar a una de las siguientes conclusiones:
+
+\begin{itemize}
+\item Si la parte real del par conjugado es positiva las exponenciales asociadas tenderán en el tiempo a infinito.
+\item Si la parte real del par conjugado es negativa las exponenciales asociadas tenderán en el tiempo a cero
+\item Si la parte real del par conjugado es cero las exponenciales adquieren un valor constante.
+\end{itemize}
+
+Por lo tanto, en ambos casos, podemos decir que la estabilidad de un sistema va a depender de la posición de la parte real de los polos contenidos en la función de transferencia. Si la parte real es negativa es estable, si es negativa es inestable y si es cero la respuesta será críticamente estable por lo que se necesitará de otro análisis para determinar su estabilidad.
