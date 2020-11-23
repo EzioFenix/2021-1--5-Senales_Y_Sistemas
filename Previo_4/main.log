@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.16)  8 NOV 2020 13:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.10) (preloaded format=pdflatex 2020.10.16)  22 NOV 2020 22:23
 entering extended mode
 **./main.tex
 (main.tex
@@ -413,29 +413,98 @@ Overfull \hbox (16.02197pt too wide) in paragraph at lines 40--56
 > <./img//portada.png>]
 \openout2 = `latex/previo.aux'.
 
- (latex/previo.tex) [2
+ (latex/previo.tex
+Underfull \hbox (badness 10000) in paragraph at lines 16--19
 
-
-
-] (main.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 4--10
-[]\OT1/cmr/m/n/10 Marco F. Duar-te.  8.5 Ca-sua-lity and Sta-bi-lity of Discret
-e-Time Li-near Time-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 4--10
-\OT1/cmr/m/n/10 Invariant Sys-tems.  $\OT1/cmtt/m/n/10 https : / / cnx . org / 
-contents / KilsjSQd @ 10 . 18 : 9kZ-[]CT3d @ 1 /
+
+pdfTeX warning: pdflatex.exe (file ./latex/tabla1.pdf): PDF inclusion: found PD
+F version <1.6>, but at most version <1.5> allowed
+<latex/tabla1.pdf, id=15, 349.60388pt x 109.45552pt>
+File: latex/tabla1.pdf Graphic file (type pdf)
+<use latex/tabla1.pdf>
+Package pdftex.def Info: latex/tabla1.pdf  used on input line 27.
+(pdftex.def)             Requested size: 348.34547pt x 109.06276pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./latex/tabla2.pdf): PDF inclusion: found PD
+F version <1.6>, but at most version <1.5> allowed
+<latex/tabla2.pdf, id=16, 348.95041pt x 87.23802pt>
+File: latex/tabla2.pdf Graphic file (type pdf)
+<use latex/tabla2.pdf>
+Package pdftex.def Info: latex/tabla2.pdf  used on input line 35.
+(pdftex.def)             Requested size: 348.34547pt x 87.0887pt.
+[2
+
+
+
+ <./latex/tabla1.pdf> <./latex/tabla2.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./latex/tabla3.pdf): PDF inclusion: found PD
+F version <1.6>, but at most version <1.5> allowed
+<latex/tabla3.pdf, id=90, 347.97028pt x 142.4555pt>
+File: latex/tabla3.pdf Graphic file (type pdf)
+<use latex/tabla3.pdf>
+Package pdftex.def Info: latex/tabla3.pdf  used on input line 59.
+(pdftex.def)             Requested size: 348.34547pt x 142.60728pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+
+ []
+
+[3 <./latex/tabla3.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 114--115
+
  []
 
 
-Underfull \hbox (badness 2213) in paragraph at lines 4--10
-\OT1/cmtt/m/n/10 Causality-[]and-[]Stability-[]of-[]Discrete-[]Time-[]Linear-[]
-Time-[]Invariant-[]Systems$\OT1/cmr/m/n/10 .  On-li-ne; ac-ces-sed 1
+
+pdfTeX warning: pdflatex.exe (file ./latex/tabla5.pdf): PDF inclusion: found PD
+F version <1.6>, but at most version <1.5> allowed
+<latex/tabla5.pdf, id=134, 346.01038pt x 86.58408pt>
+File: latex/tabla5.pdf Graphic file (type pdf)
+<use latex/tabla5.pdf>
+Package pdftex.def Info: latex/tabla5.pdf  used on input line 126.
+(pdftex.def)             Requested size: 348.34547pt x 87.17044pt.
+<img/tabla4.png, id=135, 864.98157pt x 176.91093pt>
+File: img/tabla4.png Graphic file (type png)
+<use img/tabla4.png>
+Package pdftex.def Info: img/tabla4.png  used on input line 140.
+(pdftex.def)             Requested size: 348.34547pt x 71.2463pt.
+[4 <./latex/tabla5.pdf>]
+<img/Pila.jpg, id=167, 681.54625pt x 589.20125pt>
+File: img/Pila.jpg Graphic file (type jpg)
+<use img/Pila.jpg>
+Package pdftex.def Info: img/Pila.jpg  used on input line 149.
+(pdftex.def)             Requested size: 248.81927pt x 215.10611pt.
+) [5 <./img/tabla4.png> <./img/Pila.jpg>] (main.bbl)
+Overfull \hbox (21.35716pt too wide) in paragraph at lines 36--37
+[]$\OT1/cmtt/m/n/10 http : / / www . juntadeandalucia . es / averroes / centros
+-[]tic / 21700290 / helvia / aula / archivos / repositorio /
  []
 
-) [3
+
+Overfull \hbox (140.35616pt too wide) in paragraph at lines 37--38
+[]$\OT1/cmtt/m/n/10 https : / / sites . google . com / site / mecanismosmarcos 
+/ 10-[]elementos-[]auxiliares-[]de-[]maquinas / 3-[]disipadores-[]de-[]energia-
+[]mecanica$ 
+ []
+
+
+Overfull \hbox (49.32915pt too wide) in paragraph at lines 40--42
+[]$\OT1/cmtt/m/n/10 http : / / cms . dm . uba . ar / depto / public / fasc5 . p
+df$ $https : / / www . cuautitlan . unam . mx / licenciaturas / tecnologia /
+ []
+
+
+Overfull \hbox (26.10712pt too wide) in paragraph at lines 42--43
+[]$\OT1/cmtt/m/n/10 http : / / www . ptolomeo . unam . mx : 8080 / xmlui / bits
+tream / handle / 132 . 248 . 52 . 100 / 8780 / tesis . pdf ? sequence =
+ []
+
+[6
 
 
 ] (main.aux (latex/Portada.aux)
@@ -443,25 +512,29 @@ LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
  (latex/previo.aux)) ) 
 Here is how much of TeX's memory you used:
- 4582 strings out of 480257
- 68840 string characters out of 2881437
- 378430 words of memory out of 3000000
- 21042 multiletter control sequences out of 15000+200000
+ 4643 strings out of 480257
+ 69778 string characters out of 2881437
+ 378479 words of memory out of 3000000
+ 21093 multiletter control sequences out of 15000+200000
  538362 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 70i,14n,77p,259b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 70i,14n,77p,547b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\vaito\AppData\Local\MiKTeX\fonts/pk/ljfour/jkn
 appen/ec/dpi600\tcrm1728.pk><C:/Users/vaito/AppData/Local/Programs/MiKTeX/fonts
 /type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/vaito/AppData/Local/Programs/MiK
 TeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/vaito/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/vaito/AppData/L
-ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/vaito/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users
-/vaito/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-
-Output written on main.pdf (3 pages, 300555 bytes).
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/vaito/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/vaito
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Use
+rs/vaito/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb
+><C:/Users/vaito/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mr12.pfb><C:/Users/vaito/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmr17.pfb><C:/Users/vaito/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmsy10.pfb><C:/Users/vaito/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmtt10.pfb>
+Output written on main.pdf (6 pages, 1390861 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
+ 207 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 

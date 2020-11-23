@@ -1,23 +1,27 @@
 \begin{thebibliography}{1}
 
-\bibitem{cnxOpenStax}
-{Marco F. Duarte}.
-\newblock {8.5 Casuality and Stability of Discrete-Time Linear Time-Invariant
-  Systems}.
+\bibitem{w2}
+{ Ernesto Kofman FCEIA - Universidad Nacional de Rosarioz}.
+\newblock {Sistemas Continuos}.
+\newblock \url{https://www.fceia.unr.edu.ar/~kofman/files/eci_MyS_4.pdf}, 2009.
+\newblock Online; recuperado 22 Noviembre 2020.
+
+\bibitem{w3}
+{Carlos Vera Álvarez INSIA (Instituto Universitario de Investigaci{\'{o}}n del
+  Autom{\'{o}}vil)}.
+\newblock {Introduccion a la t{\'{e}}cnica de bond graph en la dinamica
+  ferroviaria }.
 \newblock
-  \url{https://cnx.org/contents/KilsjSQd@10.18:9kZ-CT3d@1/Causality-and-Stability-of-Discrete-Time-Linear-Time-Invariant-Systems}.
-\newblock Online; accessed 1 Noviembre 2020.
+  \url{https://ruc.udc.es/dspace/bitstream/handle/2183/10640/CC%2041%20art%2028.pdf?sequence=1&isAllowed=y},
+  2008.
+\newblock Online; recuperado 22 Noviembre 2020.
 
-\bibitem{mata2017analisis}
-Gloria Mata~Hern{\'a}ndez, V{\'\i}ctor~M S{\'a}nchez~Esquivel, and Juan~M
-  G{\'o}mez~Gonz{\'a}lez.
-\newblock An{\'a}lisis de sistemas y se{\~n}ales con c{\'o}mputo avanzado,
-  2017.
-
-\bibitem{webNijtEdu}
-{Mitra K.}
-\newblock {Stability Condition of an LTI Discrete-Time System}.
-\newblock \url{https://web.njit.edu/~akansu/Ch2(3)Handouts_3e.pdf}, 2005.
-\newblock Online; accessed 1 Noviembre 2020.
+\bibitem{w1}
+{Dra. Flor Lizeth Torres Ortiz}.
+\newblock {Din{\'{a}}mica de Sistemas F{\'{i}}sicos T1}.
+\newblock
+  \url{https://www.lizeth-torres.info/curso-din%C3%A1mica-de-sistemas-f%C3%ADsicos/},
+  2020.
+\newblock Online; recuperado 22 Noviembre 2020.
 
 \end{thebibliography}

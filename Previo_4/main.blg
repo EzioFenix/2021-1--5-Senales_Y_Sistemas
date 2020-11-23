@@ -11,34 +11,34 @@ Reallocating 'name_of_file' (item size: 1) to 18 items.
 Database file #1: latex/previo4.bib
 You've used 3 entries,
             2118 wiz_defined-function locations,
-            516 strings with 4679 characters,
-and the built_in function-call counts, 714 in all, are:
-= -- 65
-> -- 32
+            515 strings with 4660 characters,
+and the built_in function-call counts, 671 in all, are:
+= -- 66
+> -- 21
 < -- 0
-+ -- 13
-- -- 10
-* -- 28
-:= -- 126
-add.period$ -- 10
++ -- 9
+- -- 6
+* -- 20
+:= -- 120
+add.period$ -- 12
 call.type$ -- 3
-change.case$ -- 14
+change.case$ -- 12
 chr.to.int$ -- 0
 cite$ -- 3
 duplicate$ -- 21
 empty$ -- 67
-format.name$ -- 10
-if$ -- 151
+format.name$ -- 6
+if$ -- 145
 int.to.chr$ -- 0
 int.to.str$ -- 3
 missing$ -- 0
-newline$ -- 19
+newline$ -- 21
 num.names$ -- 6
-pop$ -- 29
+pop$ -- 24
 preamble$ -- 1
-purify$ -- 11
+purify$ -- 9
 quote$ -- 0
-skip$ -- 19
+skip$ -- 18
 stack$ -- 0
 substring$ -- 15
 swap$ -- 3
@@ -49,4 +49,4 @@ type$ -- 12
 warning$ -- 0
 while$ -- 6
 width$ -- 4
-write$ -- 33
+write$ -- 38
