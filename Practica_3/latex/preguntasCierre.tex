@@ -51,3 +51,41 @@ Debido a que las funciones seno y coseno oscilan entre los valores de 1 y -1 el 
 \end{itemize}
 
 Por lo tanto, en ambos casos, podemos decir que la estabilidad de un sistema va a depender de la posición de la parte real de los polos contenidos en la función de transferencia. Si la parte real es negativa es estable, si es negativa es inestable y si es cero la respuesta será críticamente estable por lo que se necesitará de otro análisis para determinar su estabilidad.
+
+En cuanto a un señal discreta esta será acotada si y sólo si cualquier entrada acotada produce una salida acotada, es decir si
+
+\begin{equation}
+|x[n]|<\infty \forall n
+\end{equation}
+
+entonces 
+
+\begin{equation}
+|y[n]|<\infty \forall n
+\end{equation}
+
+Si se tiene un sistema lineal invariente en el tiempo su respuesta de estado cero está dada por:
+
+\begin{equation}
+y[n]=\sum_{m=-\infty}^n x[m]h[n-m]
+\end{equation}
+
+Si realizamos el cambio de variable k=n-m cuando $m=-\infty$ y cuando m=n en k=0, entonces
+
+\begin{equation}
+y[n]=\sum_{m=-\infty}^n h[k]x[n-m]
+\end{equation}
+
+En caso de que la señal de entrada sea acotoda tenemos lo siguiente
+
+\begin{equation}
+y[n]=\sum_{m=-\infty}^n h[k]x[n-m] \lq \sum_{m=-\infty}^n |h[k]x[n-m]| \lq M\sum_{m=-\infty}^n |h[k]|
+\end{equation}
+
+En caso de que la suma de la respuesta al impulso converja inferimos que 
+
+\begin{equation}
+|y[n]|<\infty
+\end{equation}
+
+que representa la condición necesaria para la estabilidad
