@@ -35,7 +35,7 @@ Empezamos por la sustitución de los valores dados en el ejercicio, donde $\frac
 	H(s)=\frac{Y(s)}{X(s)}=\frac{5}{(s^2+s+5)}
 \end{equation}
 
-\noindent Si consideramos la entrada un escalor, es decir que $X(s)=1$ simplificamos la expresión a 
+\noindent Si consideramos la entrada un escalón, es decir que $X(s)=1$ simplificamos la expresión a 
 
 \begin{equation}
 	Y(s)=\frac{5}{(s^2+s+5)}
@@ -57,10 +57,10 @@ Empezamos por la sustitución de los valores dados en el ejercicio, donde $\frac
 
 \begin{itemize}
 	\item Considerando un periodo de muestreo de $ T_s = 1 $ y utilizando el método de discretización mediante
-	diferencias finitas, encuentre la ecuación en diferencias asociada y resu´elvala utilizando el método de recurrencia. Compare los resultados gr´aficos de la versi´on de tiempo continuo y la de tiempo discreto para diferentes valores del periodo de muestreo (disminúyalo en un punto decimal hasta $T_s = 0,0001$).
+	diferencias finitas, encuentre la ecuación en diferencias asociada y resuélvala utilizando el método de recurrencia. Compare los resultados gráficos de la versión de tiempo continuo y la de tiempo discreto para diferentes valores del periodo de muestreo (disminúyalo en un punto decimal hasta $T_s = 0,0001$).
 \end{itemize}
 
-Empezaremos por encontrar la ecuación en diferencias.Para esto tendremos que utilizar la definición que nos permite transformar de una ecuación diferencial a una en diferencias:
+Empezaremos por encontrar la ecuación en diferencias. Para esto tendremos que utilizar la definición que nos permite transformar de una ecuación diferencial a una en diferencias:
 
 \begin{equation}
 \frac{dy}{dx}=\frac{y(t)-y(t-T_s)}{T_s}
@@ -102,7 +102,7 @@ Para la obtención de las gráficas anteriores se usaron los siguientes comandos
 \end{itemize}
 
 
-Como podemos concluir de observar ambas gráficas, la importancia de $T_s$ radica en que mientras más se acerque su valor a cero mejor será la aproximación de la solución de ecuaciones por diferencias a la solución de la ecuación en tiempo contínuo. Esto mismo lo podemos ver al hacer $T_s=0.0001$ parece que las gráficas se sobreponen, mientras que en $T_s=1$ se ve claramente la diferencia entre ambas gráficas. Cabe aclarar que la gráfica obtenida mediante la solución de diferencias finitas nunca va a ser la misma que la de tiempo continuo sin importar cuanto se disminuya $T_s$
+Como podemos concluir de observar ambas gráficas, la importancia de $T_s$ radica en que mientras más se acerque su valor a cero mejor será la aproximación de la solución de ecuaciones por diferencias a la solución de la ecuación en tiempo continuo. Esto mismo lo podemos ver al hacer $T_s=0.0001$ parece que las gráficas se sobreponen, mientras que en $T_s=1$ se ve claramente la diferencia entre ambas gráficas. Cabe aclarar que la gráfica obtenida mediante la solución de diferencias finitas nunca va a ser la misma que la de tiempo continuo sin importar cuanto se disminuya $T_s$
 
 \begin{itemize}
 	\item Obtenga la función de transferencia del sistema de tiempo continuo.
@@ -130,7 +130,7 @@ Podemos llegar a que si $T_s=1$ nuestra ecuación por diferencias es la siguient
 \frac{0.5252z^2+1.231z+0.3053}{z^2 +0.6936x + 0.3679}
 \end{equation}
 
-Dicha ecaución es obtenida en Matlab tras usar los siguientes comandos.
+Dicha ecuación es obtenida en Matlab tras usar los siguientes comandos.
 
 \begin{itemize}
 \item Ts=1
@@ -146,14 +146,14 @@ Como ya habíamos mencionado antes, la función de transferencia en tiempo discr
 \frac{0.5252z^2+1.231z+0.3053}{z^2 +0.6936x + 0.3679}
 \end{equation}
 
-La comparación entre la obtención de la función de transferencia con y sin diferenciador se ve en las gráficas de la siguiente pregunta. Lo que se puede observar es que mediante el uso del diferenciador, la ecuación y su gráfica se acercan más a la ecuación y gráfica de la respuesta en tiempo contínuo, es decir, la presencia del diferenciador hace más exacta la aproximación en tiempo discreto.
+La comparación entre la obtención de la función de transferencia con y sin diferenciador se ve en las gráficas de la siguiente pregunta. Lo que se puede observar es que mediante el uso del diferenciador, la ecuación y su gráfica se acercan más a la ecuación y gráfica de la respuesta en tiempo continuo, es decir, la presencia del diferenciador hace más exacta la aproximación en tiempo discreto.
 
 \begin{itemize}
 	\item Grafique en una sola figura la respuesta al impulso del sistema de tiempo continuo, y las dos aproximaciones
 	de tiempo discreto.
 \end{itemize}
 
-Para esto se generaron dos gráficas: una sin diferenciador discreto y una con diferenciador discreto, siendo representadas por las curvas roja y amarilla respectivamente. Cabe mencionar que las curvas son la respueta al impulso.
+Para esto se generaron dos gráficas: una sin diferenciador discreto y una con diferenciador discreto, siendo representadas por las curvas roja y amarilla respectivamente. Cabe mencionar que las curvas son la respuesta al impulso.
 
 \noindent \textbf{Salida con $T_s=1$}
 
@@ -175,7 +175,7 @@ La obtención de la gráfica anterior se realizó con la siguiente serie de coma
 
 \begin{itemize}
 	\item Disminuya el tiempo de muestreo hasta obtener una aproximación adecuada de la respuesta del sistema
-	y grafique la comparación. ¿Qu´e aproximación resultó mejor?
+	y grafique la comparación. ¿Qué aproximación resultó mejor?
 \end{itemize}
 
 Para obtener una aproximación adecuada se disminuyó el valor de $T_s$ a 0.0001, generando la siguiente 
@@ -203,7 +203,7 @@ Gracias a este acercamiento podemos apreciar que la gráfica que se acerca más 
 \item dimpulse(Hz2,Ts)
 \end{itemize}
 
-\textbf{Comparacion de solución de tiempo continuo y solución de tiempo discreto utilizando funciones de tranferencia para diferentes valores de tiempo de muestreo }
+\textbf{Comparación de solución de tiempo continuo y solución de tiempo discreto utilizando funciones de transferencia para diferentes valores de tiempo de muestreo }
 
 {\Large Control discreto de un sistema de tiempo continuo.}
 
@@ -218,12 +218,12 @@ Considere un sistema lineal e invariante en el tiempo representado por la siguie
 Para poder determinar la estabilidad del sistema, vamos a ver con MATLAB en donde se encuentran sus Polos. Para ello vamos a escribir los siguientes comandos.\\
 \includegraphics[scale=1]{cod1.png}\\
 \includegraphics[scale=1]{G1.png} \\
-Como se puede ver un polo esta en s=-3, pero el otro polo esta en s=0, por lo que no podemos decir si el sistema es estable o no. Ya que para que un sistema sea estable TODOS sus polos deben de estar en la parte izquierda del plano S. Por lo que primero veremos su respuesta al escalón para así poder determinar si el sistema es estable o no.
+Como se puede ver un polo está en s=-3, pero el otro polo está en s=0, por lo que no podemos decir si el sistema es estable o no. Ya que para que un sistema sea estable TODOS sus polos deben de estar en la parte izquierda del plano S. Por lo que primero veremos su respuesta al escalón para así poder determinar si el sistema es estable o no.
 
 	\item Utilizando el software especializado de su preferencia, determine la respuesta al escalón del sistema y describa como es su comportamiento.
 Para determinar la respuesta al escalón del sistema vamos a agregar el siguiente comando al código anterior: step(H,'-')\\
 \includegraphics[scale=1]{G2.png} \\
-Al analizar esta gráfica podemos ver que no tiene fin, en otras palabras la gráfica no tiene limite, ya que solamente es creciente conforme va avanzando en el eje X positivo. Por lo que podemos concluir a la pregunta anterior que NO es estable el sistema.
+Al analizar esta gráfica podemos ver que no tiene fin, en otras palabras, la gráfica no tiene límite, ya que solamente es creciente conforme va avanzando en el eje X positivo. Por lo que podemos concluir a la pregunta anterior que NO es estable el sistema.
 
 \end{itemize}
 
@@ -239,7 +239,7 @@ Al analizar esta gráfica podemos ver que no tiene fin, en otras palabras la gr�
 	\item Cuando se desea cambiar el comportamiento de un sistema se debe implementar un controlador de lazo
 	cerrado, el cual compara la se˜nal de salida del sistema con la se˜nal de referencia y con base en esta se˜nal
 	de error calcula la entrada del sistema para que se obtenga el comportamiento deseado, de acuerdo con
-	el diagrama de bloques mostrado en Figura 24. El modo m´as simple de control consiste en el control
+	el diagrama de bloques mostrado en Figura 24. El modo más simple de control consiste en el control
 	proporcional, el cual realimenta un término proporcional del error de salida, es decir,
 \end{itemize}
 
@@ -281,7 +281,7 @@ Polos: $P_{1}=-5$ y $P_{2}=2$. Por lo tanto es inestable el sistema.\\
 Respuesta al escalón del sistema:\\
 \includegraphics[scale=0.36]{./img2/G6.jpg}\\
 ¿Cómo son los polos del sistema? Dependiendo del valor de K los polos del sistema van a variar. Por lo que pueden volver estable o inestable al sistema.\\
-¿Qué puede decir de la estabilidad del mismo? Lo que podemos ver con estos dos valores de K, es que dependiendo de su valor, se modificará la entrada del sistema, volviéndose estable o inestable el sistema.
+¿Qué puede decir de la estabilidad del mismo? Lo que podemos ver con estos dos valores de K, es que, dependiendo de su valor, se modificará la entrada del sistema, volviéndose estable o inestable el sistema.
 
 \begin{itemize}
 	\item A partir de las funciones de transferencia de lazo abierto y de lazo cerrado en tiempo continuo obtenga las versiones de tiempo discreto. Realice lo anterior utilizando los procedimientos presentados en la
