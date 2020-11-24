@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.28)  23 NOV 2020 21:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.28)  23 NOV 2020 22:02
 entering extended mode
 **./main.tex
 (main.tex
@@ -892,26 +892,26 @@ File: ./img2/SalidaTs1.jpg Graphic file (type jpg)
 Package pdftex.def Info: ./img2/SalidaTs1.jpg  used on input line 89.
 (pdftex.def)             Requested size: 337.2626pt x 252.94695pt.
  [13 <./img2/salidaejercicio1.jpg>]
-<./img2/SalidaTs00001.jpg, id=521, 562.1pt x 421.575pt>
+<./img2/SalidaTs00001.jpg, id=520, 562.1pt x 421.575pt>
 File: ./img2/SalidaTs00001.jpg Graphic file (type jpg)
 <use ./img2/SalidaTs00001.jpg>
 Package pdftex.def Info: ./img2/SalidaTs00001.jpg  used on input line 93.
 (pdftex.def)             Requested size: 337.2626pt x 252.94695pt.
  [14 <./img2/SalidaTs1.jpg> <./img2/SalidaTs00001.jpg>]
-<./img2/SalidaTs1DosHz.jpg, id=526, 562.1pt x 421.575pt>
+<./img2/SalidaTs1DosHz.jpg, id=525, 562.1pt x 421.575pt>
 File: ./img2/SalidaTs1DosHz.jpg Graphic file (type jpg)
 <use ./img2/SalidaTs1DosHz.jpg>
 Package pdftex.def Info: ./img2/SalidaTs1DosHz.jpg  used on input line 160.
 (pdftex.def)             Requested size: 337.2626pt x 252.94695pt.
  [15]
-<./img2/SalidaTs00001DosHz.jpg, id=535, 562.1pt x 421.575pt>
+<./img2/SalidaTs00001DosHz.jpg, id=534, 562.1pt x 421.575pt>
 File: ./img2/SalidaTs00001DosHz.jpg Graphic file (type jpg)
 <use ./img2/SalidaTs00001DosHz.jpg>
 Package pdftex.def Info: ./img2/SalidaTs00001DosHz.jpg  used on input line 186.
 
 (pdftex.def)             Requested size: 337.2626pt x 252.94695pt.
  [16 <./img2/SalidaTs1DosHz.jpg>]
-<./img2/SalidaTs00001DosHzAcercamiento.jpg, id=540, 562.1pt x 421.575pt>
+<./img2/SalidaTs00001DosHzAcercamiento.jpg, id=539, 562.1pt x 421.575pt>
 File: ./img2/SalidaTs00001DosHzAcercamiento.jpg Graphic file (type jpg)
 <use ./img2/SalidaTs00001DosHzAcercamiento.jpg>
 Package pdftex.def Info: ./img2/SalidaTs00001DosHzAcercamiento.jpg  used on inp
@@ -919,55 +919,55 @@ ut line 190.
 (pdftex.def)             Requested size: 337.2626pt x 252.94695pt.
  [17 <./img2/SalidaTs00001DosHz.jpg> <./img2/SalidaTs00001DosHzAcercamiento.jpg
 >]
-<img2/cod1.png, id=545, 150.5625pt x 83.5622pt>
+<img2/cod1.png, id=544, 150.5625pt x 83.5622pt>
 File: img2/cod1.png Graphic file (type png)
 <use img2/cod1.png>
 Package pdftex.def Info: img2/cod1.png  used on input line 219.
 (pdftex.def)             Requested size: 150.56212pt x 83.56198pt.
-<img2/G1.png, id=546, 360.3864pt x 291.9708pt>
+<img2/G1.png, id=545, 360.3864pt x 291.9708pt>
 File: img2/G1.png Graphic file (type png)
 <use img2/G1.png>
 Package pdftex.def Info: img2/G1.png  used on input line 220.
 (pdftex.def)             Requested size: 360.38551pt x 291.97008pt.
  [18 <./img2/cod1.png> <./img2/G1.png (PNG copy)>]
-<img2/G2.png, id=552, 356.532pt x 289.08pt>
+<img2/G2.png, id=551, 356.532pt x 289.08pt>
 File: img2/G2.png Graphic file (type png)
 <use img2/G2.png>
 Package pdftex.def Info: img2/G2.png  used on input line 225.
 (pdftex.def)             Requested size: 356.53111pt x 289.07928pt.
-<img2/fig24.jpg, id=553, 443.40656pt x 152.06813pt>
+<img2/fig24.jpg, id=552, 443.40656pt x 152.06813pt>
 File: img2/fig24.jpg Graphic file (type jpg)
 <use img2/fig24.jpg>
 Package pdftex.def Info: img2/fig24.jpg  used on input line 232.
 (pdftex.def)             Requested size: 310.38248pt x 106.44695pt.
 
 [19 <./img2/G2.png (PNG copy)> <./img2/fig24.jpg>]
-<./img2/G3.jpg, id=559, 575.14874pt x 431.6125pt>
+<./img2/G3.jpg, id=558, 575.14874pt x 431.6125pt>
 File: ./img2/G3.jpg Graphic file (type jpg)
 <use ./img2/G3.jpg>
 Package pdftex.def Info: ./img2/G3.jpg  used on input line 272.
 (pdftex.def)             Requested size: 287.57367pt x 215.80571pt.
  [20]
-<./img2/G5.jpg, id=564, 657.45625pt x 533.995pt>
+<./img2/G5.jpg, id=563, 657.45625pt x 533.995pt>
 File: ./img2/G5.jpg Graphic file (type jpg)
 <use ./img2/G5.jpg>
 Package pdftex.def Info: ./img2/G5.jpg  used on input line 275.
 (pdftex.def)             Requested size: 262.97784pt x 213.59421pt.
-<./img2/G4.jpg, id=565, 749.80125pt x 608.2725pt>
+<./img2/G4.jpg, id=564, 749.80125pt x 608.2725pt>
 File: ./img2/G4.jpg Graphic file (type jpg)
 <use ./img2/G4.jpg>
 Package pdftex.def Info: ./img2/G4.jpg  used on input line 279.
 (pdftex.def)             Requested size: 269.92824pt x 218.97794pt.
  [21 <./img2/G3.jpg> <./img2/G5.jpg>]
-<./img2/G6.jpg, id=570, 728.7225pt x 621.32124pt>
+<./img2/G6.jpg, id=569, 728.7225pt x 621.32124pt>
 File: ./img2/G6.jpg Graphic file (type jpg)
 <use ./img2/G6.jpg>
 Package pdftex.def Info: ./img2/G6.jpg  used on input line 282.
 (pdftex.def)             Requested size: 262.33989pt x 223.67548pt.
-) [22 <./img2/G4.jpg> <./img2/G6.jpg>] [23]
-(latex/preguntasCierre.tex [24
+) [22 <./img2/G4.jpg> <./img2/G6.jpg>] (latex/preguntasCierre.tex
+[23
 
-]) [25]
+]) [24]
 \openout2 = `latex/conclu.tex.aux'.
 
 
@@ -992,7 +992,7 @@ Time-[]Invariant-[]Systems$[]\OT1/cmr/m/n/10 .  On-li-ne; ac-ces-sed 1
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 63.
- [26
+ [25
 
 
 ]
@@ -1009,46 +1009,45 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 63.
  ) 
 Here is how much of TeX's memory you used:
- 11486 strings out of 481199
- 174967 string characters out of 2905595
+ 11482 strings out of 481199
+ 174920 string characters out of 2905595
  471456 words of memory out of 3000000
- 26760 multiletter control sequences out of 15000+200000
- 539644 words of font info for 48 fonts, out of 3000000 for 9000
+ 26758 multiletter control sequences out of 15000+200000
+ 539309 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,18n,46p,656b,494s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,18n,46p,655b,494s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
-1000.pk> <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\tcrm1440.pk><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmbx10.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmbx12.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmbx5.pfb><C:/Users/rodri/AppData/Local/Programs/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/rodri/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/rodri/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/rodr
-i/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/U
-sers/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.p
-fb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
-/cmmi7.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmmi8.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/pu
-blic/amsfonts/cm/cmr10.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/
-type1/public/amsfonts/cm/cmr12.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTe
-X/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/rodri/AppData/Local/Program
-s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/rodri/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/rodri/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/rodri/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Use
-rs/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.
-pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
-msfonts/cm/cmsy5.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmsy7.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/font
-s/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/rodri/AppData/Local/Programs/Mi
-KTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/rodri/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/rodri/AppData/Local/
-Programs/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
-Output written on main.pdf (26 pages, 1342869 bytes).
+1440.pk><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmbx12.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmbx5.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmbx7.pfb><C:/Users/rodri/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/rodri/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/rodri/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/r
+odri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:
+/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7
+.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmmi8.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/public/a
+msfonts/cm/cmr10.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/
+public/amsfonts/cm/cmr12.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/font
+s/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/rodri/AppData/Local/Programs/MiKT
+eX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/rodri/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/rodri/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/rodri/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/rod
+ri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C
+:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmsy5.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/public
+/amsfonts/cm/cmsy7.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type
+1/public/amsfonts/cm/cmti10.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/rodri/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/rsfs/rsfs10.pfb><C:/Users/rodri/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/urw/zapfding/uzdr.pfb>
+Output written on main.pdf (25 pages, 1340917 bytes).
 PDF statistics:
- 684 PDF objects out of 1000 (max. 8388607)
- 63 named destinations out of 1000 (max. 500000)
+ 675 PDF objects out of 1000 (max. 8388607)
+ 62 named destinations out of 1000 (max. 500000)
  193 words of extra memory for PDF output out of 10000 (max. 10000000)
 
