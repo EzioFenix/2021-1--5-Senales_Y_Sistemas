@@ -13,27 +13,27 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: plain.bst
 Reallocating 'name_of_file' (item size: 1) to 18 items.
 Database file #1: latex/previo3.bib
-Repeated entry---line 24 of file latex/previo3.bib
+Repeated entry---line 23 of file latex/previo3.bib
  : @misc{webNijtEdu
  :                 
 I'm skipping whatever remains of this entry
-Repeated entry---line 31 of file latex/previo3.bib
+Repeated entry---line 30 of file latex/previo3.bib
  : @misc{webNijtEdu
  :                 
 I'm skipping whatever remains of this entry
-Repeated entry---line 38 of file latex/previo3.bib
+Repeated entry---line 37 of file latex/previo3.bib
  : @misc{webNijtEdu
  :                 
 I'm skipping whatever remains of this entry
-Repeated entry---line 45 of file latex/previo3.bib
+Repeated entry---line 44 of file latex/previo3.bib
  : @misc{cnxOpenStax
  :                  
 I'm skipping whatever remains of this entry
-You're missing an entry type---line 48 of file latex/previo3.bib
+You're missing an entry type---line 47 of file latex/previo3.bib
  :  url  = "https://cnx.org/contents/KilsjSQd@
  :                                            10.18:9kZ-CT3d@1/Causality-and-Stability-of-Discrete-Time-Linear-Time-Invariant-Systems"
 I'm skipping whatever remains of this entry
-You're missing an entry type---line 48 of file latex/previo3.bib
+You're missing an entry type---line 47 of file latex/previo3.bib
  :  url  = "https://cnx.org/contents/KilsjSQd@10.18:9kZ-CT3d@
  :                                                           1/Causality-and-Stability-of-Discrete-Time-Linear-Time-Invariant-Systems"
 I'm skipping whatever remains of this entry

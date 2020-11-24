@@ -1,4 +1,13 @@
-\BOOKMARK [1][-]{section.1}{Preguntas de cierre}{}% 1
-\BOOKMARK [2][-]{subsection.1.1}{Explique brevemente la importancia de la conversi\363n de se\361ales de tiempo continuo a tiempo discreto}{section.1}% 2
-\BOOKMARK [2][-]{subsection.1.2}{\277Qu\351 relaci\363n existe entre la transformadas de Laplace y Z?}{section.1}% 3
-\BOOKMARK [2][-]{subsection.1.3}{\277C\363mo se caracteriza la estabilidad de sistemas de tiempo continuo y tiempo discreto en el contexto de funciones de transferencia?}{section.1}% 4
+\BOOKMARK [1][-]{section.1}{Previo}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{\277Qu\351 m\351todos se pueden utilizar para resolver ecuaciones en diferencias en el dominio del tiempo discreto?}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{\277Cu\341l es la relaci\363n entre las variables s y z? \277C\363mo se relaciona el plano complejo en s con el plano complejo en z?}{section.1}% 3
+\BOOKMARK [3][-]{subsubsection.1.2.1}{Transformada Z}{subsection.1.2}% 4
+\BOOKMARK [3][-]{subsubsection.1.2.2}{Mapeo}{subsection.1.2}% 5
+\BOOKMARK [2][-]{subsection.1.3}{\277C\363mo se caracteriza la estabilidad de los sistemas lineales e invariantes de tiempo discreto?}{section.1}% 6
+\BOOKMARK [2][-]{subsection.1.4}{\277Qu\351 diferencias existen entre los m\351todos de fracciones parciales para sistemas de tiempo continuo y sistemas de tiempo discreto?}{section.1}% 7
+\BOOKMARK [2][-]{subsection.1.5}{\277En qu\351 dispositivo de la vida cotidiana se realizan conversiones de se\361ales de tiempo continuo a tiempo discreto y viceversa?}{section.1}% 8
+\BOOKMARK [1][-]{section.2}{Preguntas de cierre}{}% 9
+\BOOKMARK [2][-]{subsection.2.1}{Explique brevemente la importancia de la conversi\363n de se\361ales de tiempo continuo a tiempo discreto}{section.2}% 10
+\BOOKMARK [2][-]{subsection.2.2}{\277Qu\351 relaci\363n existe entre la transformadas de Laplace y Z?}{section.2}% 11
+\BOOKMARK [2][-]{subsection.2.3}{\277C\363mo se caracteriza la estabilidad de sistemas de tiempo continuo y tiempo discreto en el contexto de funciones de transferencia?}{section.2}% 12
+\BOOKMARK [1][-]{section.3}{Observaciones y conclusiones}{}% 13

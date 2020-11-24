@@ -53,7 +53,14 @@ Empezamos por la sustitución de los valores dados en el ejercicio, donde $\frac
 
 \noindent\textbf{Representación grafica: }
 
-\noindent \includegraphics[scale=0.6]{./img2/salidaejercicio1}
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{img2/salidaejercicio1}
+	\caption{Gráfica de la función muestreada}
+	\label{fig:salidaejercicio1}
+\end{figure}
 
 \begin{itemize}
 	\item Considerando un periodo de muestreo de $ T_s = 1 $ y utilizando el método de discretización mediante
@@ -86,11 +93,21 @@ Empezaremos por encontrar la ecuación en diferencias. Para esto tendremos que u
 
 \noindent \textbf{Salida con $T_s=1$}
 
-\noindent \includegraphics[scale=0.6]{./img2/SalidaTs1}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{./img2/SalidaTs1}
+	\caption{Salida con $T_s=1$}
+	\label{fig:salidaTs1}
+\end{figure}
 
 \noindent \textbf{Salida con $T_s=0,0001$}
 
-\noindent \includegraphics[scale=0.6]{./img2/SalidaTs00001}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{./img2/SalidaTs00001}
+	\caption{Salida con $T_s=0,0001$}
+	\label{fig:salidaTs01}
+\end{figure}
 
 Para la obtención de las gráficas anteriores se usaron los siguientes comandos de Matlab:
 
@@ -157,7 +174,14 @@ Para esto se generaron dos gráficas: una sin diferenciador discreto y una con d
 
 \noindent \textbf{Salida con $T_s=1$}
 
-\noindent \includegraphics[scale=0.6]{./img2/SalidaTs1DosHz}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{./img2/SalidaTs1DosHz}
+	\caption{{Salida con $T_s=1$}}
+	\label{fig:salidaTs01-1}
+\end{figure}
+
+
 
 La obtención de la gráfica anterior se realizó con la siguiente serie de comandos
 
@@ -183,11 +207,21 @@ Para obtener una aproximación adecuada se disminuyó el valor de $T_s$ a 0.0001
 
 \noindent \textbf{Salida con $T_s=0.0001$}
 
-\noindent \includegraphics[scale=0.6]{./img2/SalidaTs00001DosHz}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{./img2/SalidaTs00001DosHz}
+	\caption{{Salida con $T_s=0.0001$}}
+	\label{fig:salidaTs001-1}
+\end{figure}
 
 Debido a la gran aproximación de ambas gráficas se requiere de un acercamiento para poder observar las diferencias entre la gráfica generada con diferenciador (amarilla) y la generada sin diferenciador (roja).
 
-\noindent \includegraphics[scale=0.6]{./img2/SalidaTs00001DosHzAcercamiento}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.7\linewidth]{./img2/SalidaTs00001DosHzAcercamiento}
+	\caption{{Salida con $T_s=0.0001$}}
+	\label{fig:salidaTs001-2}
+\end{figure}
 
 Gracias a este acercamiento podemos apreciar que la gráfica que se acerca más a la de tiempo continuo (azul) es la que utiliza un diferenciador (amarilla). Para esto utilizamos los comandos:
 
@@ -216,13 +250,29 @@ Considere un sistema lineal e invariante en el tiempo representado por la siguie
 \begin{itemize}
 	\item Determine la estabilidad del sistema.
 Para poder determinar la estabilidad del sistema, vamos a ver con MATLAB en donde se encuentran sus Polos. Para ello vamos a escribir los siguientes comandos.\\
-\includegraphics[scale=1]{cod1.png}\\
-\includegraphics[scale=1]{G1.png} \\
+
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.9]{cod1.png} \\
+	\includegraphics[scale=0.9]{G1.png}
+	\caption{{Gráfica de polos y ceros}}
+	\label{fig:salidaTs001-4}
+\end{figure}
+
 Como se puede ver un polo está en s=-3, pero el otro polo está en s=0, por lo que no podemos decir si el sistema es estable o no. Ya que para que un sistema sea estable TODOS sus polos deben de estar en la parte izquierda del plano S. Por lo que primero veremos su respuesta al escalón para así poder determinar si el sistema es estable o no.
 
 	\item Utilizando el software especializado de su preferencia, determine la respuesta al escalón del sistema y describa como es su comportamiento.
 Para determinar la respuesta al escalón del sistema vamos a agregar el siguiente comando al código anterior: step(H,'-')\\
-\includegraphics[scale=1]{G2.png} \\
+ \\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.9]{G2.png}
+	\caption{{Gráfica respuesta al escalón}}
+	\label{fig:salidaTs001-5}
+\end{figure}
+
 Al analizar esta gráfica podemos ver que no tiene fin, en otras palabras, la gráfica no tiene límite, ya que solamente es creciente conforme va avanzando en el eje X positivo. Por lo que podemos concluir a la pregunta anterior que NO es estable el sistema.
 
 \end{itemize}
@@ -237,7 +287,7 @@ Al analizar esta gráfica podemos ver que no tiene fin, en otras palabras, la gr
 
 \begin{itemize}
 	\item Cuando se desea cambiar el comportamiento de un sistema se debe implementar un controlador de lazo
-	cerrado, el cual compara la se˜nal de salida del sistema con la se˜nal de referencia y con base en esta se˜nal
+	cerrado, el cual compara la señal de salida del sistema con la señal de referencia y con base en esta señal
 	de error calcula la entrada del sistema para que se obtenga el comportamiento deseado, de acuerdo con
 	el diagrama de bloques mostrado en Figura 24. El modo más simple de control consiste en el control
 	proporcional, el cual realimenta un término proporcional del error de salida, es decir,
@@ -269,17 +319,46 @@ $$G_{c}(s)=\frac{Y(s)}{R(s)}=\frac{K}{(s(s+3)+K)}$$
 Si k=1:
 $$G(s)=\frac{1}{(s(s+3)+1)}$$	
 $$G(s)=\frac{1}{s^{2}+3s+1}$$	
-\includegraphics[scale=0.5]{./img2/G3.jpg}\\ 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.5]{./img2/G3.jpg}\
+	\caption{{Si K=1}}
+	\label{fig:salidaTs001-6}
+\end{figure}
 Polos: $P_{1}=-2.618$ y $P_{2}=-0.382$. Por lo tanto es estable el sistema.\\
 Respuesta al escalón del sistema:\\
-\includegraphics[scale=0.4]{./img2/G5.jpg}\\
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{./img2/G6.jpg}
+	\caption{{Respuesta al escalón del sistema}}
+	\label{fig:salidaTs001-6}
+\end{figure}
+
+
 Si k=-10:
 $$G(s)=\frac{-10}{(s(s+3)-10)}$$	
 $$G(s)=\frac{-10}{s^{2}+3s-10}$$
-\includegraphics[scale=0.36]{./img2/G4.jpg}\\ 	
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.36]{./img2/G4.jpg}
+	\caption{{Si K=-10}}
+	\label{fig:salidaTs001-6}
+\end{figure}
+
+
 Polos: $P_{1}=-5$ y $P_{2}=2$. Por lo tanto es inestable el sistema.\\
-Respuesta al escalón del sistema:\\
-\includegraphics[scale=0.36]{./img2/G6.jpg}\\
+Respuesta al escalón del sistema:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.4\linewidth]{./img2/G6.jpg}
+	\caption{{Respuesta al escalón del sistema}}
+	\label{fig:salidaTs001-7}
+\end{figure}
+
 ¿Cómo son los polos del sistema? Dependiendo del valor de K los polos del sistema van a variar. Por lo que pueden volver estable o inestable al sistema.\\
 ¿Qué puede decir de la estabilidad del mismo? Lo que podemos ver con estos dos valores de K, es que, dependiendo de su valor, se modificará la entrada del sistema, volviéndose estable o inestable el sistema.
 
