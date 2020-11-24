@@ -12,7 +12,7 @@ La diferencia que existe entre la transformada de Laplace y la transformada Z es
 		
 \subsection{¿Cómo se caracteriza la estabilidad de sistemas de tiempo continuo y tiempo discreto en el contexto de funciones de transferencia?}
 
-En sistemas continuos la estabilidad se analiza en el denominador de la función de transferencia. La estabilidad va a depender de la posición de las raíces obtenidas al utiliar el método de fracciones parciales. En el caso de raices positivas observamos lo siguiente:
+En sistemas continuos la estabilidad se analiza en el denominador de la función de transferencia. La estabilidad va a depender de la posición de las raíces obtenidas al utilizar el método de fracciones parciales. En el caso de raíces positivas observamos lo siguiente:
 
 \begin{equation}
 H(s)=\frac{C_1}{s+p_1}+\frac{C_2}{s+p_2}+...+\frac{C_N}{s+p_N}
@@ -32,7 +32,7 @@ Cada termino de la siguiente ecuación puede caer en uno de los siguientes tres 
 \item La raíz $s=-p_n$ es cero con lo cual la exponencial evaluada será uno obteniendo un valor constante $C_n$
 \end{itemize}
 
-De la misma forma se puede analizar los casos en que las raices de la transformada de Laplace sean complejas. En dichos casos la función de transferencia tendra una forma similar a la siguiente:
+De la misma forma se puede analizar los casos en que las raíces de la transformada de Laplace sean complejas. En dichos casos la función de transferencia tendrá una forma similar a la siguiente:
 
 \begin{equation}
 H(s)=\frac{C_1}{s+p_1}+\frac{C_2^2+C_3}{s^2+\alpha s+\beta}+...+\frac{C_N}{s+p_N}
@@ -70,7 +70,7 @@ entonces
 |y[n]|<\infty \forall n
 \end{equation}
 
-Si se tiene un sistema lineal invariente en el tiempo su respuesta de estado cero está dada por:
+Si se tiene un sistema lineal invariante en el tiempo su respuesta de estado cero está dada por:
 
 \begin{equation}
 y[n]=\sum_{m=-\infty}^n x[m]h[n-m]
@@ -82,7 +82,7 @@ Si realizamos el cambio de variable k=n-m cuando $m=-\infty$ y cuando m=n en k=0
 y[n]=\sum_{m=-\infty}^n h[k]x[n-m]
 \end{equation}
 
-En caso de que la señal de entrada sea acotoda tenemos lo siguiente
+En caso de que la señal de entrada sea acotada tenemos lo siguiente
 
 \begin{equation}
 y[n]=\sum_{m=-\infty}^n h[k]x[n-m] \lq \sum_{m=-\infty}^n |h[k]x[n-m]| \lq M\sum_{m=-\infty}^n |h[k]|
