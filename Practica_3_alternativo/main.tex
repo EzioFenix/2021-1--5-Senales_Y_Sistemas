@@ -14,6 +14,7 @@
 \usepackage{listings}
 \usepackage{mathrsfs,mathtools} 
 \usepackage{pdfpages} %Incluir pdf
+\usepackage{csvsimple} %%----------ARCHIVOS CVS
 
 
 \newsavebox\foobox
@@ -49,17 +50,28 @@
 %% Cuerpo principal-------------------------------------------------------
 
 \begin{document}
-	\include{latex/Portada}
-	\includepdf[pages=-]{latex/parte1.pdf}
-	\include{latex/previo.tex}
-	\includepdf[pages=-]{latex/parte2.pdf}
-	\include{latex/desarrollo}
-%	\includepdf[pages=-]{latex/parte3.pdf}
-	\input{latex/preguntasCierre.tex}
-	\include{latex/conclu.tex}
-	%\nocite{webNijtEdu}
+	\include{latex/portada}
+	\includepdf[pages={2-12}]{latex/practica3.pdf}
+	%\include{latex/previo.tex}
+	\includepdf[pages={13}]{latex/practica3.pdf}
+	\include{latex/pag13.tex}
+	\includepdf[pages={14}]{latex/practica3.pdf}
+	\include{latex/pag14.tex}
+	\includepdf[pages={15}]{latex/practica3.pdf}
+	\include{latex/pag15.tex}
+	\includepdf[pages={16}]{latex/practica3.pdf}
+	\include{latex/pag16.tex}
+	\includepdf[pages={17}]{latex/practica3.pdf}
+	\include{latex/pag17.tex}
+	\includepdf[pages={18}]{latex/practica3.pdf}
+	\include{latex/pag18.tex}
+	\includepdf[pages={19}]{latex/practica3.pdf}
+	\include{latex/pag19.tex}
+	\includepdf[pages={20-21}]{latex/practica3.pdf}
+	\include{latex/conclusion.tex}
+	\nocite{webNijtEdu}
 	\nocite{*}
 	\bibliographystyle{plain}
-	\bibliography{latex/previo3.bib}
+	\bibliography{latex/referencias.bib}
 \end{document}
 

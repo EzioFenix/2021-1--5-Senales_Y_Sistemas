@@ -1,0 +1,123 @@
+\justifying
+\section{Preguntas de cierre}
+
+\subsection{Explique brevemente la importancia de la conversión de señales de tiempo continuo a tiempo discreto}
+
+Al transformar una señal de tiempo continuo a tiempo discreto (muestrear una señal) lo que nos permite es tomar valores específicos para poder analizar dicha señal de entrada. Por otra parte, la discretización también nos sirve para transformar una señal de análoga a digital. La conversión de la señal análoga en señal digital se realiza, entre otras razones porque las señales digitales presentan grandes ventajas a la hora de ser transmitidas y/o procesadas, como por ejemplo menor costo de almacenamiento o mayor facilidad de procesamiento.\\
+En las aplicaciones tecnológicas el muestreo se toma en intervalos de tiempo iguales, proceso denominado “Muestreo periódico de la señal”, lo que facilita procesos como el de la reconstrucción de una señal.
+
+Es un hecho que es imposible procesar una señal continua, ya que necesita una tendencia a infinitos puntos, y realizar eso en medios es por decir inviable si quisieramos guardarlo, copiarlo y/o editarlo o transmitirlo, por ello se toman muestas, si bien es cierto que pierde calidad, las hace más manejable.
+
+
+\subsection{¿Qué relación existe entre la transformadas de Laplace y Z?}
+Ambas transformadas son una herramienta de gran alcance formuladas para solucionar una variedad amplia de problemas de valor inicial. La estrategia es transformar las ecuaciones diferenciales difíciles en los problemas simples del álgebra donde las soluciones pueden ser obtenidas fácilmente.\\
+La diferencia que existe entre la transformada de Laplace y la transformada Z es que la transformada de laplace se emplea en el estudio de los sistemas continuos lineales e invariantes en el tiempo y la transformada z se utiliza en el análisis de los sistemas discretos lineales e invariantes en el tiempo.
+
+Otra diferencia, si nos queremos poner más hacia el lado matemático, es que el nucleo de tranformación cambia mientras que laplace es :
+
+$$e^{-st}$$
+
+En la tranformada Z es:
+
+$$z^{-n}$$
+
+Lo digo de esta manera porque estos nucleos es la maquinaria matemática que hacen que las funciones converjan, al igual que una restricción hace que un sistema lineal tenga solución.
+		
+\subsection{¿Cómo se caracteriza la estabilidad de sistemas de tiempo continuo y tiempo discreto en el contexto de funciones de transferencia?}
+
+En sistemas continuos la estabilidad se analiza en el denominador de la función de transferencia. La estabilidad va a depender de la posición de las raíces obtenidas al utilizar el método de fracciones parciales. En el caso de raíces positivas observamos lo siguiente:
+
+\begin{equation}
+H(s)=\frac{C_1}{s+p_1}+\frac{C_2}{s+p_2}+...+\frac{C_N}{s+p_N}
+\end{equation}
+
+A dicha transformada de Laplace le corresponde la siguiente antitransformada:
+
+\begin{equation}
+h(t)=C_1e^{-p_1t}+C_2e^{-p_2t}+...+C_Ne^{-p_Nt}
+\end{equation}
+
+Cada termino de la siguiente ecuación puede caer en uno de los siguientes tres casos:
+
+\begin{itemize}
+\item La raíz $s=-p_n$ es positiva, entonces el exponente es positivo y la exponencial tenderá al infinito con el tiempo.
+\item La raíz $s=-p_n$ es negativa, por lo que el exponente correspondiente es negativo y al exponencial tenderá a cero con el tiempo.
+\item La raíz $s=-p_n$ es cero con lo cual la exponencial evaluada será uno obteniendo un valor constante $C_n$
+\end{itemize}
+
+De la misma forma se puede analizar los casos en que las raíces de la transformada de Laplace sean complejas. En dichos casos la función de transferencia tendrá una forma similar a la siguiente:
+
+\begin{equation}
+H(s)=\frac{C_1}{s+p_1}+\frac{C_2^2+C_3}{s^2+\alpha s+\beta}+...+\frac{C_N}{s+p_N}
+\end{equation}
+
+En este caso el termino complejo es la segunda fracción de la ecuación. Si analizamos la antitransformada de laplace de dicho término podemos ver que puede tener una de las siguientes dos formas:
+
+\begin{equation}
+\frac{\omega}{(s+a)^2+{\omega}^2} => e^{-\alpha t}seno(\omega t)
+\end{equation}
+
+\begin{equation}
+\frac{s+a}{(s+a)^2+{\omega}^2} => e^{-\alpha t}cos(\omega t)
+\end{equation}
+
+Debido a que las funciones seno y coseno oscilan entre los valores de 1 y -1 el comportamiento del término imaginario va a depender de $e^-{\alpha t}$. Con esto podemos llegar a una de las siguientes conclusiones:
+
+\begin{itemize}
+\item Si la parte real del par conjugado es positiva las exponenciales asociadas tenderán en el tiempo a infinito.
+\item Si la parte real del par conjugado es negativa las exponenciales asociadas tenderán en el tiempo a cero
+\item Si la parte real del par conjugado es cero las exponenciales adquieren un valor constante.
+\end{itemize}
+
+Por lo tanto, en ambos casos, podemos decir que la estabilidad de un sistema va a depender de la posición de la parte real de los polos contenidos en la función de transferencia. Si la parte real es negativa es estable, si es negativa es inestable y si es cero la respuesta será críticamente estable por lo que se necesitará de otro análisis para determinar su estabilidad.
+
+En cuanto a un señal discreta esta será acotada si y sólo si cualquier entrada acotada produce una salida acotada, es decir si
+
+\begin{equation}
+|x[n]|<\infty \forall n
+\end{equation}
+
+entonces 
+
+\begin{equation}
+|y[n]|<\infty \forall n
+\end{equation}
+
+Si se tiene un sistema lineal invariante en el tiempo su respuesta de estado cero está dada por:
+
+\begin{equation}
+y[n]=\sum_{m=-\infty}^n x[m]h[n-m]
+\end{equation}
+
+Si realizamos el cambio de variable k=n-m cuando $m=-\infty$ y cuando m=n en k=0, entonces
+
+\begin{equation}
+y[n]=\sum_{m=-\infty}^n h[k]x[n-m]
+\end{equation}
+
+En caso de que la señal de entrada sea acotada tenemos lo siguiente
+
+\begin{equation}
+y[n]=\sum_{m=-\infty}^n h[k]x[n-m] \lq \sum_{m=-\infty}^n |h[k]x[n-m]| \lq M\sum_{m=-\infty}^n |h[k]|
+\end{equation}
+
+En caso de que la suma de la respuesta al impulso converja inferimos que 
+
+\begin{equation}
+|y[n]|<\infty
+\end{equation}
+
+que representa la condición necesaria para la estabilidad
+
+\section{Observaciones y conclusiones}
+
+\begin{itemize}
+	\item \textbf{Alfaro Domínguez Rodrigo:}
+	Al final de esta práctica logramos entender las características que determinan la estabilidad de un sistema al igual que como pasar una señal de tiempo continuo a tiempo discreto, esto con la finalidad de facilitar su analisis con una señal similar a la señal real, con ayuda de Matlab. De la misma forma pudimos comprender el comportamiento y la utilidad de un sistema de lazo cerrado.
+	\item \textbf{Barrera Peña Víctor Miguel:} 
+	Si bien, se logró realizar la práctica e identificar las señales básicas que marca la práctica, además de muestrear dichas señales , no creo que en todos los aspectos haya tenido una clara resolución de cada una de las actividades, siento que se terminó la práctica con prisa y dejando algunas dudas de qué era lo que tenía que realizar el inciso, pero general la resolución fue casi total, dejando un margen pequeño de dudas, aunque sigo teniendo dudas de algunos comandos en Matlab, pero ellos por la misma naturaleza del software que nunca lo he utilizado antes. otro punto a destacar es que siento que hay un desfase mayor en esta materia con respecto a teoría, por ello la transformada Z sigue siendo un poco indiferente ante la resolución en esa práctica, sin embargo puedo decir que esta práctica se concluyó con éxito i satisface los estándares que se marcan.
+	\item \textbf{Villeda Hernández Erick Ricardo:}
+	En esta práctica logramos trabajar con algunas señales, las cuales con ayuda de MATLAB nos sirvieron para conocer la relación que existe entre las señales físicas  y su representación matemática. Así como la forma y la importancia de discretizar un sistema. Por otra parte logramos determinar la función de transferencia de un sistema y la función de transferencia de lazo cerrado, la cual nos sirvió para verificar la inestabilidad de un sistema dependiendo el valor K de entrada. Por último logramos conocer la importancia de un controlador en un sistema, ya que este controla la salida del mismo.
+	
+	
+\end{itemize}
