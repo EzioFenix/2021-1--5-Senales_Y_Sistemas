@@ -1,6 +1,7 @@
-ï»¿Actividad,Sistema 1,Sistema 2,Sistema 3
-Variables fÃ­sicas,,,
-Almacenadores de flujo,,,
-Almacenadores de esfuerzo,,,
-Fuentes de energÃ­a,,,
-Elementos disipadores,,,
+Actividad	Sistema 1	Sistema 2	Sistema 3	
+Variables físicas	x, v, a	?, ?, ?	v, i	
+Almacenadores de flujo	m1, m2	m1	C1,C2	
+	? = p m [kg]	? = H I [Nms^2] ]		
+Almacenadores de esfuerzo				
+Fuentes de energía				
+Elementos disipadores				
