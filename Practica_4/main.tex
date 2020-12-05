@@ -1,0 +1,73 @@
+\documentclass[10pt]{article}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{tabularx} % para width table
+\usepackage[left=1.5cm,top=2.4cm,right=2.1cm,bottom=3cm,bindingoffset=0.5cm]{geometry} % original[22 iz,24 arri]
+\usepackage{multirow}
+\graphicspath{{img/}{img2/}}
+\usepackage{url}
+\usepackage{amsmath}
+\usepackage{hyperref} % Hipervinculos
+\usepackage{ragged2e} % Alineación
+\usepackage{amssymb} %therefore
+\usepackage{float} %Here
+\usepackage{listings}
+\usepackage{mathrsfs,mathtools} 
+\usepackage{pdfpages} %Incluir pdf
+\usepackage{csvsimple} %%----------ARCHIVOS CVS
+
+
+\newsavebox\foobox
+\newlength{\foodim}
+\newcommand{\slantbox}[2][0]{\mbox{%
+        \sbox{\foobox}{#2}%
+        \foodim=#1\wd\foobox
+        \hskip \wd\foobox
+        \hskip -0.5\foodim
+        \pdfsave
+        \pdfsetmatrix{1 0 #1 1}%
+        \llap{\usebox{\foobox}}%
+        \pdfrestore
+        \hskip 0.5\foodim
+}}
+\def\Laplace{\slantbox[-.45]{$\mathscr{L}$}}
+
+
+
+%% paquetes para esta práctica (aquí abajo)-------------------------------
+
+\usepackage{titlesec}
+\titleformat{\section}
+{\normalfont\Large\bfseries \raggedright}{\thesection}{1em}{}
+
+
+%% Preambulo configuraciones adicionales----------------------------------
+
+\newcommand{\iu}{{i\mkern1mu}} % definicon nuevo comando
+\addtolength{\jot}{1em} % espacio vertical ecuaciones
+
+
+%% Cuerpo principal-------------------------------------------------------
+
+\begin{document}
+	\include{latex/portada}
+	\includepdf[pages={2-8}]{latex/practica4.pdf}
+	\include{latex/previo.tex}
+	\includepdf[pages={9}]{latex/practica4.pdf}
+	%act1
+	\include{latex/pag9.tex}
+	\includepdf[pages={10}]{latex/practica4.pdf}
+	%act2-3
+	\include{latex/pag10.tex}
+	\includepdf[pages={11}]{latex/practica4.pdf}
+	%act4
+	\include{latex/pag11.tex}
+	\includepdf[pages={12}]{latex/practica4.pdf}
+	%act5
+	\include{latex/conclusion.tex}
+	\nocite{webNijtEdu}
+	\nocite{*}
+	\bibliographystyle{plain}
+	\bibliography{latex/referencias.bib}
+\end{document}
+

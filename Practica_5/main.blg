@@ -1,0 +1,89 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+Reallocating 'name_of_file' (item size: 1) to 18 items.
+A level-1 auxiliary file: latex/portada.aux
+Reallocating 'name_of_file' (item size: 1) to 17 items.
+A level-1 auxiliary file: latex/previo.aux
+Reallocating 'name_of_file' (item size: 1) to 15 items.
+A level-1 auxiliary file: latex/pag9.aux
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+A level-1 auxiliary file: latex/pag11.aux
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+A level-1 auxiliary file: latex/pag12.aux
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+A level-1 auxiliary file: latex/pag14.aux
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+A level-1 auxiliary file: latex/pag16.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+A level-1 auxiliary file: latex/conclusion.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: plain.bst
+Reallocating 'name_of_file' (item size: 1) to 22 items.
+Database file #1: latex/referencias.bib
+Repeated entry---line 23 of file latex/referencias.bib
+ : @misc{webNijtEdu
+ :                 
+I'm skipping whatever remains of this entry
+Repeated entry---line 30 of file latex/referencias.bib
+ : @misc{webNijtEdu
+ :                 
+I'm skipping whatever remains of this entry
+Repeated entry---line 37 of file latex/referencias.bib
+ : @misc{webNijtEdu
+ :                 
+I'm skipping whatever remains of this entry
+Repeated entry---line 44 of file latex/referencias.bib
+ : @misc{cnxOpenStax
+ :                  
+I'm skipping whatever remains of this entry
+You're missing an entry type---line 47 of file latex/referencias.bib
+ :  url  = "https://cnx.org/contents/KilsjSQd@
+ :                                            10.18:9kZ-CT3d@1/Causality-and-Stability-of-Discrete-Time-Linear-Time-Invariant-Systems"
+I'm skipping whatever remains of this entry
+You're missing an entry type---line 47 of file latex/referencias.bib
+ :  url  = "https://cnx.org/contents/KilsjSQd@10.18:9kZ-CT3d@
+ :                                                           1/Causality-and-Stability-of-Discrete-Time-Linear-Time-Invariant-Systems"
+I'm skipping whatever remains of this entry
+You've used 3 entries,
+            2118 wiz_defined-function locations,
+            522 strings with 4777 characters,
+and the built_in function-call counts, 714 in all, are:
+= -- 65
+> -- 32
+< -- 0
++ -- 13
+- -- 10
+* -- 28
+:= -- 126
+add.period$ -- 10
+call.type$ -- 3
+change.case$ -- 14
+chr.to.int$ -- 0
+cite$ -- 3
+duplicate$ -- 21
+empty$ -- 67
+format.name$ -- 10
+if$ -- 151
+int.to.chr$ -- 0
+int.to.str$ -- 3
+missing$ -- 0
+newline$ -- 19
+num.names$ -- 6
+pop$ -- 29
+preamble$ -- 1
+purify$ -- 11
+quote$ -- 0
+skip$ -- 19
+stack$ -- 0
+substring$ -- 15
+swap$ -- 3
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 12
+warning$ -- 0
+while$ -- 6
+width$ -- 4
+write$ -- 33
+(There were 6 error messages)
