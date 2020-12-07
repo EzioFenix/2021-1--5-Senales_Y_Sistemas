@@ -1,3 +1,97 @@
 \subsection{Solución actividad 5}
+1. Identificar el numero de elementos que almacenan energía:\\
+El sistema presenta cuatro almacenadores de energía. La ecuación resultante va a ser de orden dos, debido a que el sistema presenta los dos tipos de elementos almacenadores (de flujo y de esfuerzo), siendo estos elementos los siguientes:\\
+\begin{itemize}
+\item Almacenadores de esfuerzo: Inductores L y Lm
+\item Almacenadores de flujo: Capacitor C y la masa rotada.
+\end{itemize}
+2. Identificar el número de restricciones físicas tanto de compatibilidad como de continuidad.\\
+El sistema presenta cuatro restricciones físicas y se dividen de la siguiente forma: los dos circuitos en serie presentan restricciones de compatibilidad, mientras que la conexión en paralelo y la masa presentan restricciones de tipo de compatibilidad.\\
+3. Plantear las restricciones físicas encontradas:\\
+De la primera malla obtenemos el siguiente análisis:\\
+\begin{equation}
+E=V_L+v
+\end{equation}
+Si analizamos uno de los nodos que conecta a la primera malla con la conexión en paralelo obtenemos:\\
+\begin{equation}
+i=i_c+i_r+i_a
+\end{equation}
+De la segunda malla obtenemos el siguiente análisis:
+\begin{equation}
+v=V_{RM}+V_{LM}+VM
+\end{equation}
+Y por último, del sistema de la masa obtenemos lo siguiente:
+\begin{equation}
+K_{ew}=J\frac{d}{dt}w+Bw-J_L
+\end{equation}
+4. Sustituir las relaciones constitutivas de los elementos
+Sustituyendo las relaciones constitutivas de los elementos de la primera malla obtenemos:
+\begin{equation}
+E=L\frac{d}{dt}i(t)+w
+\end{equation}
+En cuanto a los elementos constitutivos del análisis de la entrada de corriente al nodo alfa queda:
+\begin{equation}
+i=C\frac{dv}{dt}+\frac{v}{R}+i_a
+\end{equation}
+Y finalmente podemos expresar el análisis de la segunda malla de la siguiente forma:
+\begin{equation}
+v=R_mi_a+L_m\frac{d}{dt}i_a+K_{ew}
+\end{equation}
+5. Obtener el modelo matemático de forma matricial.
+La representación del modelo matemático en forma matricial responde a la siguiente forma:
+\begin{equation}
+x'(t)=A(y)x(t)+B(t)u(t)
+\end{equation}
+La cual la podemos denotar como:
+\begin{equation}
+x'=Ax+Bu
+\end{equation}
+Donde $x'$ es el vector de variables de estados, $A$ es la matriz de estados, $x$ es el vector de estados, $B$ es la matriz de entrada y $u$ es el vector de entrada.\\
+Para poder usar la expresión anterior debemos de dejar las ecuaciones de las restricciones de nuestro sistema en función de sus derivadas normalizadas. Po lo cual las ecuaciones a usar quedarán de las siguientes:
+\begin{equation}
+i'=-\frac{1}{L}v+\frac{1}{L}E
+\end{equation}
+\begin{equation}
+v'=\frac{1}{C}i-\frac{1}{RC}v-\frac{1}{C}i_a
+\end{equation}
+\begin{equation}
+i'_a=\frac{1}{L_m}v-\frac{1}{L_m}R_mi_a-\frac{K_e}{L_m}w
+\end{equation}
+\begin{equation}
+w'=\frac{1}{J}k_ei_a-\frac{1}{J}B_w
+\end{equation}
+Ya teniendo las ecuaciones despejadas podemos sustituir en la ecuación matricial obteniendo la siguiente expresión:\\
+llflfld
+\begin{equation}
+\begin{pmatrix}
+i'\\
+v'\\
+i_a'\\
+w' 
+\end{pmatrix}
+=
+\begin{pmatrix}
+0 & -\frac{1}{L} & 0 & 0\\
+\frac{1}{C} & -\frac{1}{RC} & -\frac{1}{C} & 0\\
+0 & \frac{1}{L_m} & -\frac{R_m}{L_m} & \frac{K_e}{L_m}\\
+0 & 0 & \frac{K_e}{J} & -\frac{B}{J}
+\end{pmatrix}
+\begin{pmatrix}
+i\\
+v\\
+i_a\\
+w
+\end{pmatrix}
++
+\begin{pmatrix}
+\frac{1}{L}\\
+0\\
+0\\
+0\\
+\end{pmatrix}
+E
+\end{equation}
+6. ¿Qué se puede concluir del sistema físico obtenido?//
+Que la unión de distintos sistemas físicos nos da como resultado la unión de las ecuaciones de dichos sistemas, es decir, su modelo matemático va a ser la suma de los modelos matemáticos de cada uno de los subsistemas que conforman a dicho sistema.
 
 \section{OBSERVACIONES Y CONCLUSIONES}
