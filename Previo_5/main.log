@@ -1,147 +1,145 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.28)  8 DEC 2020 08:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.11.4)  8 DEC 2020 08:33
 entering extended mode
 **./main.tex
 (main.tex
-LaTeX2e <2020-02-02> patch level 5
-L3 programming layer <2020-09-03>
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
-Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
-File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+LaTeX2e <2020-10-01> patch level 2
+L3 programming layer <2020-10-27> xparse <2020-03-03>
+("C:\Program Files\MiKTeX\tex/latex/base\article.cls"
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+("C:\Program Files\MiKTeX\tex/latex/base\size10.clo"
+File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 )
-\c@part=\count168
-\c@section=\count169
-\c@subsection=\count170
-\c@subsubsection=\count171
-\c@paragraph=\count172
-\c@subparagraph=\count173
-\c@figure=\count174
-\c@table=\count175
+\c@part=\count175
+\c@section=\count176
+\c@subsection=\count177
+\c@subsubsection=\count178
+\c@paragraph=\count179
+\c@subparagraph=\count180
+\c@figure=\count181
+\c@table=\count182
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
-\bibindent=\dimen134
+\bibindent=\dimen138
 )
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
-Package: babel 2020/09/01 3.48 The Babel package
+("C:\Program Files\MiKTeX\tex/generic/babel\babel.sty"
+Package: babel 2020/10/27 3.51 The Babel package
 
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.def
-File: babel.def 2020/09/01 3.48 Babel common definitions
-\babel@savecnt=\count176
-\U@D=\dimen135
+("C:\Program Files\MiKTeX\tex/generic/babel\babel.def"
+File: babel.def 2020/10/27 3.51 Babel common definitions
+\babel@savecnt=\count183
+\U@D=\dimen139
 \l@babelnohyphens=\language79
 
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+("C:\Program Files\MiKTeX\tex/generic/babel\txtbabel.def")
 \bbl@readstream=\read2
 )
-\bbl@dirlevel=\count177
+\bbl@dirlevel=\count184
 
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+("C:\Program Files\MiKTeX\tex/latex/arabi\bblopts.cfg"
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/babel-spanish\spanish.l
-df
+("C:\Users\LUZ MHA\AppData\Roaming\MiKTeX\tex/latex/babel-spanish\spanish.ldf"
 Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
 \es@quottoks=\toks15
-\es@quotdepth=\count178
+\es@quotdepth=\count185
 Package babel Info: Making " an active character on input line 561.
 Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
 Package babel Info: Making > an active character on input line 707.
-))
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
-Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+)) ("C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty"
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+("C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
-Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+("C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty"
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+("C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
-fg
+("C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 105.
 
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
-File: pdftex.def 2020/08/26 v1.2 Graphics/color driver for pdftex
+("C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def"
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
-\Gin@req@height=\dimen136
-\Gin@req@width=\dimen137
-) (C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+\Gin@req@height=\dimen140
+\Gin@req@width=\dimen141
+)
+("C:\Program Files\MiKTeX\tex/latex/tools\tabularx.sty"
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+("C:\Program Files\MiKTeX\tex/latex/tools\array.sty"
 Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
-\col@sep=\dimen138
-\ar@mcellbox=\box45
-\extrarowheight=\dimen139
+\col@sep=\dimen142
+\ar@mcellbox=\box47
+\extrarowheight=\dimen143
 \NC@list=\toks17
 \extratabsurround=\skip49
 \backup@length=\skip50
-\ar@cellbox=\box46
+\ar@cellbox=\box48
 )
-\TX@col@width=\dimen140
-\TX@old@table=\dimen141
-\TX@old@col=\dimen142
-\TX@target=\dimen143
-\TX@delta=\dimen144
-\TX@cols=\count179
+\TX@col@width=\dimen144
+\TX@old@table=\dimen145
+\TX@old@col=\dimen146
+\TX@target=\dimen147
+\TX@delta=\dimen148
+\TX@cols=\count186
 \TX@ftn=\toks18
 )
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+("C:\Users\LUZ MHA\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.sty"
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+("C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty"
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+("C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty"
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
-\Gm@cnth=\count180
-\Gm@cntv=\count181
-\c@Gm@tempcnt=\count182
-\Gm@bindingoffset=\dimen145
-\Gm@wd@mp=\dimen146
-\Gm@odd@mp=\dimen147
-\Gm@even@mp=\dimen148
-\Gm@layoutwidth=\dimen149
-\Gm@layoutheight=\dimen150
-\Gm@layouthoffset=\dimen151
-\Gm@layoutvoffset=\dimen152
+\Gm@cnth=\count187
+\Gm@cntv=\count188
+\c@Gm@tempcnt=\count189
+\Gm@bindingoffset=\dimen149
+\Gm@wd@mp=\dimen150
+\Gm@odd@mp=\dimen151
+\Gm@even@mp=\dimen152
+\Gm@layoutwidth=\dimen153
+\Gm@layoutheight=\dimen154
+\Gm@layouthoffset=\dimen155
+\Gm@layoutvoffset=\dimen156
 \Gm@dimlist=\toks19
 
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg))
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+("C:\Users\LUZ MHA\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.cfg"))
+("C:\Users\LUZ MHA\AppData\Roaming\MiKTeX\tex/latex/multirow\multirow.sty"
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip51
-\multirow@cntb=\count183
+\multirow@cntb=\count190
 \multirow@dima=\skip52
-\bigstrutjot=\dimen153
+\bigstrutjot=\dimen157
 )
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+("C:\Program Files\MiKTeX\tex/latex/url\url.sty"
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged2e.sty
+("C:\Program Files\MiKTeX\tex/latex/ragged2e\ragged2e.sty"
 Package: ragged2e 2019/07/28 v2.2 ragged2e Package (MS)
 
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/ms\everysel.sty
+("C:\Program Files\MiKTeX\tex/latex/ms\everysel.sty"
 Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
 )
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/footmisc\footmisc.sty
+("C:\Users\LUZ MHA\AppData\Roaming\MiKTeX\tex/latex/footmisc\footmisc.sty"
 Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
 \FN@temptoken=\toks20
-\footnotemargin=\dimen154
-\c@pp@next@reset=\count184
+\footnotemargin=\dimen158
+\c@pp@next@reset=\count191
 Package footmisc Info: Declaring symbol style bringhurst on input line 855.
 Package footmisc Info: Declaring symbol style chicago on input line 863.
 Package footmisc Info: Declaring symbol style wiley on input line 872.
@@ -166,116 +164,117 @@ Package footmisc Info: Declaring symbol style lamport*-robust on input line 924
 \RaggedRightParindent=\skip65
 \JustifyingParindent=\skip66
 )
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mathtools.sty
+("C:\Users\LUZ MHA\AppData\Roaming\MiKTeX\tex/latex/mathtools\mathtools.sty"
 Package: mathtools 2020/03/24 v1.24 mathematical typesetting tools
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+
+("C:\Program Files\MiKTeX\tex/latex/tools\calc.sty"
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count185
-\calc@Bcount=\count186
-\calc@Adimen=\dimen155
-\calc@Bdimen=\dimen156
+\calc@Acount=\count192
+\calc@Bcount=\count193
+\calc@Adimen=\dimen159
+\calc@Bdimen=\dimen160
 \calc@Askip=\skip67
 \calc@Bskip=\skip68
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count187
+\calc@Ccount=\count194
 \calc@Cskip=\skip69
 )
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
+("C:\Users\LUZ MHA\AppData\Roaming\MiKTeX\tex/latex/mathtools\mhsetup.sty"
 Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
 )
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
-Package: amsmath 2020/01/20 v2.17e AMS math features
+("C:\Program Files\MiKTeX\tex/latex/amsmath\amsmath.sty"
+Package: amsmath 2020/09/23 v2.17i AMS math features
 \@mathmargin=\skip70
 
 For additional information on amsmath, use the `?' option.
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+("C:\Program Files\MiKTeX\tex/latex/amsmath\amstext.sty"
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+("C:\Program Files\MiKTeX\tex/latex/amsmath\amsgen.sty"
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks21
-\ex@=\dimen157
+\ex@=\dimen161
 ))
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+("C:\Program Files\MiKTeX\tex/latex/amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen158
+\pmbraise@=\dimen162
 )
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+("C:\Program Files\MiKTeX\tex/latex/amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count188
-LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count189
-\leftroot@=\count190
-LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count191
-\DOTSCASE@=\count192
-LaTeX Info: Redefining \ldots on input line 486.
-LaTeX Info: Redefining \dots on input line 489.
-LaTeX Info: Redefining \cdots on input line 610.
-\Mathstrutbox@=\box47
-\strutbox@=\box48
-\big@size=\dimen159
-LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count193
-\c@MaxMatrixCols=\count194
+\inf@bad=\count195
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count196
+\leftroot@=\count197
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count198
+\DOTSCASE@=\count199
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box49
+\strutbox@=\box50
+\big@size=\dimen163
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count266
+\c@MaxMatrixCols=\count267
 \dotsspace@=\muskip17
-\c@parentequation=\count195
-\dspbrk@lvl=\count196
+\c@parentequation=\count268
+\dspbrk@lvl=\count269
 \tag@help=\toks22
-\row@=\count197
-\column@=\count198
-\maxfields@=\count199
+\row@=\count270
+\column@=\count271
+\maxfields@=\count272
 \andhelp@=\toks23
-\eqnshift@=\dimen160
-\alignsep@=\dimen161
-\tagshift@=\dimen162
-\tagwidth@=\dimen163
-\totwidth@=\dimen164
-\lineht@=\dimen165
+\eqnshift@=\dimen164
+\alignsep@=\dimen165
+\tagshift@=\dimen166
+\tagwidth@=\dimen167
+\totwidth@=\dimen168
+\lineht@=\dimen169
 \@envbody=\toks24
 \multlinegap=\skip71
 \multlinetaggap=\skip72
 \mathdisplay@stack=\toks25
-LaTeX Info: Redefining \[ on input line 2859.
-LaTeX Info: Redefining \] on input line 2860.
+LaTeX Info: Redefining \[ on input line 2923.
+LaTeX Info: Redefining \] on input line 2924.
 )
 LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 130.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
-\g_MT_multlinerow_int=\count266
-\l_MT_multwidth_dim=\dimen166
+\g_MT_multlinerow_int=\count273
+\l_MT_multwidth_dim=\dimen170
 \origjot=\skip73
-\l_MT_shortvdotswithinadjustabove_dim=\dimen167
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen168
-\l_MT_above_intertext_sep=\dimen169
-\l_MT_below_intertext_sep=\dimen170
-\l_MT_above_shortintertext_sep=\dimen171
-\l_MT_below_shortintertext_sep=\dimen172
-\xmathstrut@box=\box49
-\xmathstrut@dim=\dimen173
+\l_MT_shortvdotswithinadjustabove_dim=\dimen171
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen172
+\l_MT_above_intertext_sep=\dimen173
+\l_MT_below_intertext_sep=\dimen174
+\l_MT_above_shortintertext_sep=\dimen175
+\l_MT_below_shortintertext_sep=\dimen176
+\xmathstrut@box=\box51
+\xmathstrut@dim=\dimen177
 )
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\mathrsfs.sty
+("C:\Users\LUZ MHA\AppData\Roaming\MiKTeX\tex/latex/jknappen\mathrsfs.sty"
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup4
 )
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+("C:\Users\LUZ MHA\AppData\Roaming\MiKTeX\tex/latex/float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count267
+\c@float@type=\count274
 \float@exts=\toks26
-\float@box=\box50
+\float@box=\box52
 \@float@everytoks=\toks27
-\@floatcapt=\box51
+\@floatcapt=\box53
 )
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
-tex.def
-File: l3backend-pdftex.def 2020-09-01 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count268
-\l__pdf_internal_box=\box52
-) (main.aux (latex/Portada.aux)
+("C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def"
+File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count275
+\l__pdf_internal_box=\box54
+) (main.aux
+(latex/Portada.aux)
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
  (latex/previo.aux))
@@ -298,23 +297,20 @@ LaTeX Font Info:    ... okay on input line 17.
 LaTeX Info: Redefining \. on input line 17.
 LaTeX Info: Redefining \% on input line 17.
 
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
-ii
+("C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count269
-\scratchdimen=\dimen174
-\scratchbox=\box53
-\nofMPsegments=\count270
-\nofMParguments=\count271
+\scratchcounter=\count276
+\scratchdimen=\dimen178
+\scratchbox=\box55
+\nofMPsegments=\count277
+\nofMParguments=\count278
 \everyMPshowfont=\toks28
-\MPscratchCnt=\count272
-\MPscratchDim=\dimen175
-\MPnumerator=\count273
-\makeMPintoPDFobject=\count274
+\MPscratchCnt=\count279
+\MPscratchDim=\dimen179
+\MPnumerator=\count280
+\makeMPintoPDFobject=\count281
 \everyMPtoPDFconversion=\toks29
-)
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
-ase.sty
+) ("C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty"
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
@@ -363,13 +359,13 @@ LaTeX Info: Redefining \selectfont on input line 17.
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 3.
 
 
-(C:\Users\rodri\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\ursfs.fd
+("C:\Users\LUZ MHA\AppData\Roaming\MiKTeX\tex/latex/jknappen\ursfs.fd"
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-<img/logo.png, id=1, 161.85469pt x 180.675pt>
-File: img/logo.png Graphic file (type png)
-<use img/logo.png>
-Package pdftex.def Info: img/logo.png  used on input line 7.
+<img//logo.png, id=1, 161.85469pt x 180.675pt>
+File: img//logo.png Graphic file (type png)
+<use img//logo.png>
+Package pdftex.def Info: img//logo.png  used on input line 7.
 (pdftex.def)             Requested size: 35.60812pt x 39.74861pt.
 
 Overfull \hbox (27.5224pt too wide) in paragraph at lines 3--24
@@ -386,10 +382,10 @@ Overfull \hbox (27.31102pt too wide) in paragraph at lines 3--24
  [] 
  []
 
-<img/portada.png, id=3, 421.575pt x 417.05812pt>
-File: img/portada.png Graphic file (type png)
-<use img/portada.png>
-Package pdftex.def Info: img/portada.png  used on input line 35.
+<img//portada.png, id=3, 421.575pt x 417.05812pt>
+File: img//portada.png Graphic file (type png)
+<use img//portada.png>
+Package pdftex.def Info: img//portada.png  used on input line 35.
 (pdftex.def)             Requested size: 252.94695pt x 250.2368pt.
 
 Overfull \hbox (28.45276pt too wide) in paragraph at lines 52--52
@@ -409,11 +405,17 @@ Overfull \hbox (16.02197pt too wide) in paragraph at lines 40--56
 ) [1
 
 
-{C:/Users/rodri/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./img/logo.png>
- <./img/portada.png>]
+{C:/Users/LUZ MHA/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./img//logo.p
+ng> <./img//portada.png>]
 \openout2 = `latex/previo.aux'.
 
- (latex/previo.tex) [2
+ (latex/previo.tex
+Underfull \hbox (badness 10000) in paragraph at lines 6--11
+
+ []
+
+) [2
+
 
 
 ] (main.bbl
@@ -436,35 +438,33 @@ Time-[]Invariant-[]Systems$\OT1/cmr/m/n/10 .  On-li-ne; ac-ces-sed 1
 
 ) [3
 
+
 ] (main.aux (latex/Portada.aux)
 LaTeX Info: Redefining \. on input line 9.
 LaTeX Info: Redefining \% on input line 9.
  (latex/previo.aux)) ) 
 Here is how much of TeX's memory you used:
- 4546 strings out of 481199
- 68078 string characters out of 2905595
- 341274 words of memory out of 3000000
- 20064 multiletter control sequences out of 15000+200000
+ 4619 strings out of 479799
+ 67805 string characters out of 2879543
+ 378695 words of memory out of 3000000
+ 21524 multiletter control sequences out of 15000+200000
  541968 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,14n,37p,274b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\rodri\AppData\Local\MiKTeX\fonts/pk/ljfour/jkn
-appen/ec/dpi600\tcrm1728.pk><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/rodri/AppData/Local/Programs/MiK
-TeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/rodri/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/rodri/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/rodri
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Use
-rs/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb
-><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mr10.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfo
-nts/cm/cmr12.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmr17.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmr5.pfb><C:/Users/rodri/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/rodri/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/rodri/AppData/Local/P
-rograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (3 pages, 787370 bytes).
+ 78i,14n,85p,378b,361s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\LUZ MHA\AppData\Local\MiKTeX\fonts/pk/ljfour/j
+knappen/ec/dpi600\tcrm1728.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfo
+nts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx1
+2.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Pr
+ogram Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX/fonts/
+type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/c
+mr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/
+Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Program Files/
+MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/
+amsfonts/cm/cmtt10.pfb>
+Output written on main.pdf (3 pages, 788819 bytes).
 PDF statistics:
  74 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
