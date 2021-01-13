@@ -1,1 +1,25 @@
 \subsubsection{Solución}
+5. La manera de obtener el parámetro del resistor de manera teórica, para un sistema de segundo orden, se emplea la siguiente ecuación
+\begin{equation}
+R=2\xi \sqrt{\frac{L}{C}}
+\end{equation}
+en donde $\xi$ es el factor de amortiguamiento, $C$ es la capacitancia y $L$ la inductancia del sistema de segundo orden.\\
+Con base en el factor de amortiguamiento para cada una de las respuestas escalón que caracteriza a los sistemas de segundo orden ¿cuál es el valor de resistencia necesaria para cumplir dichas respuestas para el sistema mostrado en la Figura 40?
+
+La tabla se llenará tomando en cuenta a 0 como límite inferior y a 5000 como límite superior.
+
+\begin{center}
+	\begin{tabular}{ |c|c|c|c|c| }
+		\hline
+		Tipo de respuesta & Capacitor & Inductor & $Resistencia_{min}$ & $Resistencia_{max}$\\
+		\hline
+		No amortiguada & 0.22$\mu F$ & 0.05$Hz$ & 0$\Omega$ & 0$\Omega$\\
+		\hline
+		Subamortiguada & 0.22$\mu F$ & 0.05$Hz$ & 10$\Omega$ & 940$\Omega$\\
+		\hline
+		Críticamente amortiguada & 0.22$\mu F$ & 0.05$Hz$ & 953.4625$\Omega$ & 953.4625$\Omega$\\
+		\hline
+		Sobreamortiguada & 0.22$\mu F$ & 0.05$Hz$ & 1050$\Omega$ & 5000$\Omega$\\
+		\hline
+	\end{tabular}
+\end{center}
